@@ -207,28 +207,24 @@ export default function Navbar() {
       ) : medium ? (
         <Center
           className={`navbar ${stickyClass}`}
-          w="100%"
-          p={["0px 60px"]}
+          mW="767px"
+          p={["20px 25px"]}
           alignItems="center"
-          justifyContent={["center", "center", "space-between"]}
+          justifyContent={"center"}
           display="flex"
           fontFamily={"Plus Jakarta Sans"}
           zIndex={30}
+          gap="20px"
           bgColor={"white"}
         >
-          <Image
-            src={logo}
-            w={["61px", "181px", "273px"]}
-            h={["17px", "49px", "74px"]}
-          ></Image>
+          <Image src={logo} w={"181px"} h={["49px"]}></Image>
 
           <Center
             display="flex"
-            justifyContent="center"
+            justifyContent="space-between"
             alignItems="center"
             flex="1 0 0"
-            p={["0px 10px", "0px 5px", "0px 60px"]}
-            gap={["20px", "20px", "36px"]}
+            p={"0px 5px"}
             fontSize="10px"
           >
             <Flex
@@ -308,7 +304,7 @@ export default function Navbar() {
               </HashLink>
             </Flex>
           </Center>
-          {/* <Flex
+          <Flex
             display="flex"
             justifyContent="center"
             alignItems="center"
@@ -318,43 +314,27 @@ export default function Navbar() {
               to="https://api.whatsapp.com/send/?phone=6287855476158&text&type=phone_number&app_absent=0"
               as={ReachLink}
             >
-              <Image
-                src={WA}
-                w={["0px", "12px", "24px"]}
-                h={["0px", "12px", "24px"]}
-              />
+              <Image src={WA} w={"12px"} h={"12px"} />
             </Link>
             <Link
               to="https://www.instagram.com/substitute.makerspace/?hl=en"
               as={ReachLink}
             >
-              <Image
-                src={IG}
-                w={["0px", "12px", "24px"]}
-                h={["0px", "12px", "24px"]}
-              />
+              <Image src={IG} w={"12px"} h={"12px"} />
             </Link>
             <Link
               to="https://www.facebook.com/substitutemakerspace.sub/"
               as={ReachLink}
             >
-              <Image
-                src={FB}
-                w={["0px", "12px", "24px"]}
-                h={["0px", "12px", "24px"]}
-              />
+              <Image src={FB} w={"12px"} h={"12px"} />
             </Link>
             <Link
               to="https://www.youtube.com/channel/UCIIUT6oYIe9rVNJScXi83NA"
               as={ReachLink}
             >
-              <Image
-                src={YTB}
-                w={["0px", "12px", "24px"]}
-                h={["0px", "12px", "24px"]}
-              />
+              <Image src={YTB} w={"12px"} h={"12px"} />
             </Link>
-          </Flex> */}
+          </Flex>
         </Center>
       ) : kecil ? (
         <Flex

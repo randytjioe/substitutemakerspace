@@ -54,9 +54,9 @@ export default function Facilities() {
               color="#807D8A"
               textAlign="center"
               fontSize="16px"
-              font-style="normal"
+              fontStyle="normal"
               fontWeight="600"
-              line-height="26px"
+              lineHeight="26px"
             >
               Facilities
             </Flex>
@@ -64,9 +64,9 @@ export default function Facilities() {
               color="#1C2C5A"
               textAlign="center"
               fontSize="25px"
-              font-style="normal"
+              fontStyle="normal"
               fontWeight="600"
-              line-height="70px"
+              lineHeight="70px"
             >
               Kami menyediakan berbagai fasilitas yang bisa menunjang
               kreativitasmu{" "}
@@ -97,9 +97,9 @@ export default function Facilities() {
                   color="#1C2C5A"
                   textAlign="center"
                   fontSize="20px"
-                  font-style="normal"
-                  font-weight="500"
-                  line-height="28px"
+                  fontStyle="normal"
+                  fontWeight="500"
+                  lineHeight="28px"
                   textTransform="capitalize"
                 >
                   <Popover placement="bottom">
@@ -149,9 +149,9 @@ export default function Facilities() {
                   color="#1C2C5A"
                   textAlign="center"
                   fontSize="20px"
-                  font-style="normal"
-                  font-weight="500"
-                  line-height="28px"
+                  fontStyle="normal"
+                  fontWeight="500"
+                  lineHeight="28px"
                   textTransform="capitalize"
                 >
                   <Popover placement="bottom">
@@ -200,9 +200,9 @@ export default function Facilities() {
                   color="#1C2C5A"
                   textAlign="center"
                   fontSize="20px"
-                  font-style="normal"
-                  font-weight="500"
-                  line-height="28px"
+                  fontStyle="normal"
+                  fontWeight="500"
+                  lineHeight="28px"
                   textTransform="capitalize"
                 >
                   <Popover placement="bottom">
@@ -260,9 +260,9 @@ export default function Facilities() {
                   color="#1C2C5A"
                   textAlign="center"
                   fontSize="20px"
-                  font-style="normal"
-                  font-weight="500"
-                  line-height="28px"
+                  fontStyle="normal"
+                  fontWeight="500"
+                  lineHeight="28px"
                   textTransform="capitalize"
                 >
                   <Popover placement="bottom">
@@ -311,9 +311,9 @@ export default function Facilities() {
                   color="#1C2C5A"
                   textAlign="center"
                   fontSize="20px"
-                  font-style="normal"
-                  font-weight="500"
-                  line-height="28px"
+                  fontStyle="normal"
+                  fontWeight="500"
+                  lineHeight="28px"
                   textTransform="capitalize"
                 >
                   <Popover placement="bottom">
@@ -363,9 +363,9 @@ export default function Facilities() {
                   color="#1C2C5A"
                   textAlign="center"
                   fontSize="20px"
-                  font-style="normal"
-                  font-weight="500"
-                  line-height="28px"
+                  fontStyle="normal"
+                  fontWeight="500"
+                  lineHeight="28px"
                   textTransform="capitalize"
                 >
                   <Popover placement="bottom">
@@ -427,19 +427,19 @@ export default function Facilities() {
               color="#807D8A"
               textAlign="center"
               fontSize="16px"
-              font-style="normal"
+              fontStyle="normal"
               fontWeight="600"
-              line-height="26px"
+              lineHeight="26px"
             >
               Facilities
             </Flex>
             <Flex
               color="#1C2C5A"
               textAlign="center"
-              fontSize="25px"
-              font-style="normal"
+              fontSize="18px"
+              fontStyle="normal"
               fontWeight="600"
-              line-height="70px"
+              lineHeight="70px"
             >
               Kami menyediakan berbagai fasilitas yang bisa menunjang
               kreativitasmu{" "}
@@ -454,7 +454,7 @@ export default function Facilities() {
           >
             <Flex
               display="flex"
-              width="1314px"
+              width="760px"
               justifyContent="center"
               alignItems="center"
               gap="180px"
@@ -470,9 +470,9 @@ export default function Facilities() {
                   color="#1C2C5A"
                   textAlign="center"
                   fontSize="20px"
-                  font-style="normal"
-                  font-weight="500"
-                  line-height="28px"
+                  fontStyle="normal"
+                  fontWeight="500"
+                  lineHeight="28px"
                   textTransform="capitalize"
                 >
                   <Popover placement="bottom">
@@ -511,6 +511,7 @@ export default function Facilities() {
                   </Popover>
                 </Flex>
               </Flex>
+
               <Flex
                 display="flex"
                 flexDirection="column"
@@ -522,9 +523,9 @@ export default function Facilities() {
                   color="#1C2C5A"
                   textAlign="center"
                   fontSize="20px"
-                  font-style="normal"
-                  font-weight="500"
-                  line-height="28px"
+                  fontStyle="normal"
+                  fontWeight="500"
+                  lineHeight="28px"
                   textTransform="capitalize"
                 >
                   <Popover placement="bottom">
@@ -562,117 +563,15 @@ export default function Facilities() {
                   </Popover>
                 </Flex>
               </Flex>
-              <Flex
-                display="flex"
-                flexDirection="column"
-                alignItems="center"
-                gap="28px"
-              >
-                <Image src={F3}></Image>
-                <Flex
-                  color="#1C2C5A"
-                  textAlign="center"
-                  fontSize="20px"
-                  font-style="normal"
-                  font-weight="500"
-                  line-height="28px"
-                  textTransform="capitalize"
-                >
-                  <Popover placement="bottom">
-                    <PopoverTrigger>
-                      <Button
-                        bgColor={"white"}
-                        _hover={{
-                          bgColor: "#1C2C5A",
-                          color: "white",
-                        }}
-                      >
-                        Art Supplies
-                      </Button>
-                    </PopoverTrigger>
-                    <PopoverContent>
-                      <PopoverHeader
-                        fontWeight="semibold"
-                        bgColor={"#1C2C5A"}
-                        color={"white"}
-                      >
-                        Description
-                      </PopoverHeader>
-                      <PopoverArrow />
-                      <PopoverCloseButton
-                        color={"white"}
-                        bgColor={"red"}
-                        borderRadius={"100%"}
-                      />
-                      <PopoverBody textAlign={"left"}>
-                        Segala jenis bahan dan peralatan yang bisa dimanfaatkan
-                        untuk menciptakan karya seni, baik lukisan, gambar,
-                        patung, kerajinan, maupun bentuk kreativitas visual
-                        lainnya.
-                      </PopoverBody>
-                    </PopoverContent>
-                  </Popover>
-                </Flex>
-              </Flex>
             </Flex>
+
             <Flex
               display="flex"
-              width="1314px"
+              width="760px"
               justifyContent="center"
               alignItems="center"
               gap="180px"
             >
-              <Flex
-                display="flex"
-                flexDirection="column"
-                alignItems="center"
-                gap="28px"
-              >
-                <Image src={F4}></Image>
-                <Flex
-                  color="#1C2C5A"
-                  textAlign="center"
-                  fontSize="20px"
-                  font-style="normal"
-                  font-weight="500"
-                  line-height="28px"
-                  textTransform="capitalize"
-                >
-                  <Popover placement="bottom">
-                    <PopoverTrigger>
-                      <Button
-                        bgColor={"white"}
-                        _hover={{
-                          bgColor: "#1C2C5A",
-                          color: "white",
-                        }}
-                      >
-                        Sewing
-                      </Button>
-                    </PopoverTrigger>
-                    <PopoverContent>
-                      <PopoverHeader
-                        fontWeight="semibold"
-                        bgColor={"#1C2C5A"}
-                        color={"white"}
-                      >
-                        Description
-                      </PopoverHeader>
-                      <PopoverArrow />
-                      <PopoverCloseButton
-                        color={"white"}
-                        bgColor={"red"}
-                        borderRadius={"100%"}
-                      />
-                      <PopoverBody textAlign={"left"}>
-                        Berbagai macam peralatan menjahit yang bisa digunakan
-                        sesuai kebutuhanmu, mulai dari alat jahit pokok hingga
-                        alat jahit penunjang.
-                      </PopoverBody>
-                    </PopoverContent>
-                  </Popover>
-                </Flex>
-              </Flex>
               <Flex
                 display="flex"
                 flexDirection="column"
@@ -684,9 +583,9 @@ export default function Facilities() {
                   color="#1C2C5A"
                   textAlign="center"
                   fontSize="20px"
-                  font-style="normal"
-                  font-weight="500"
-                  line-height="28px"
+                  fontStyle="normal"
+                  fontWeight="500"
+                  lineHeight="28px"
                   textTransform="capitalize"
                 >
                   <Popover placement="bottom">
@@ -725,6 +624,7 @@ export default function Facilities() {
                   </Popover>
                 </Flex>
               </Flex>
+
               <Flex
                 display="flex"
                 flexDirection="column"
@@ -736,9 +636,9 @@ export default function Facilities() {
                   color="#1C2C5A"
                   textAlign="center"
                   fontSize="20px"
-                  font-style="normal"
-                  font-weight="500"
-                  line-height="28px"
+                  fontStyle="normal"
+                  fontWeight="500"
+                  lineHeight="28px"
                   textTransform="capitalize"
                 >
                   <Popover placement="bottom">
@@ -778,6 +678,126 @@ export default function Facilities() {
                 </Flex>
               </Flex>
             </Flex>
+
+            <Flex
+              display="flex"
+              flexDirection="column"
+              alignItems="center"
+              gap="28px"
+            >
+              <Flex
+                display="flex"
+                width="760px"
+                justifyContent="center"
+                alignItems="center"
+                gap="180px"
+              >
+                {" "}
+                <Flex
+                  display="flex"
+                  alignItems="center"
+                  gap="28px"
+                  flexDir={"column"}
+                >
+                  <Image src={F3}></Image>
+                  <Flex
+                    color="#1C2C5A"
+                    textAlign="center"
+                    fontSize="20px"
+                    fontStyle="normal"
+                    fontWeight="500"
+                    lineHeight="28px"
+                    textTransform="capitalize"
+                  >
+                    <Popover placement="bottom">
+                      <PopoverTrigger>
+                        <Button
+                          bgColor={"white"}
+                          _hover={{
+                            bgColor: "#1C2C5A",
+                            color: "white",
+                          }}
+                        >
+                          Art Supplies
+                        </Button>
+                      </PopoverTrigger>
+                      <PopoverContent>
+                        <PopoverHeader
+                          fontWeight="semibold"
+                          bgColor={"#1C2C5A"}
+                          color={"white"}
+                        >
+                          Description
+                        </PopoverHeader>
+                        <PopoverArrow />
+                        <PopoverCloseButton
+                          color={"white"}
+                          bgColor={"red"}
+                          borderRadius={"100%"}
+                        />
+                        <PopoverBody textAlign={"left"}>
+                          Segala jenis bahan dan peralatan yang bisa
+                          dimanfaatkan untuk menciptakan karya seni, baik
+                          lukisan, gambar, patung, kerajinan, maupun bentuk
+                          kreativitas visual lainnya.
+                        </PopoverBody>
+                      </PopoverContent>
+                    </Popover>
+                  </Flex>
+                </Flex>
+                <Flex
+                  display="flex"
+                  flexDirection="column"
+                  alignItems="center"
+                  gap="28px"
+                >
+                  <Image src={F4}></Image>
+                  <Flex
+                    color="#1C2C5A"
+                    textAlign="center"
+                    fontSize="20px"
+                    fontStyle="normal"
+                    fontWeight="500"
+                    lineHeight="28px"
+                    textTransform="capitalize"
+                  >
+                    <Popover placement="bottom">
+                      <PopoverTrigger>
+                        <Button
+                          bgColor={"white"}
+                          _hover={{
+                            bgColor: "#1C2C5A",
+                            color: "white",
+                          }}
+                        >
+                          Sewing
+                        </Button>
+                      </PopoverTrigger>
+                      <PopoverContent>
+                        <PopoverHeader
+                          fontWeight="semibold"
+                          bgColor={"#1C2C5A"}
+                          color={"white"}
+                        >
+                          Description
+                        </PopoverHeader>
+                        <PopoverArrow />
+                        <PopoverCloseButton
+                          color={"white"}
+                          bgColor={"red"}
+                          borderRadius={"100%"}
+                        />
+                        <PopoverBody textAlign={"left"}>
+                          Berbagai macam peralatan menjahit yang bisa digunakan
+                          sesuai kebutuhanmu, mulai dari alat jahit pokok hingga
+                          alat jahit penunjang.
+                        </PopoverBody>
+                      </PopoverContent>
+                    </Popover>
+                  </Flex>
+                </Flex>
+              </Flex>
+            </Flex>
           </Flex>
         </Center>
       ) : kecil ? (
@@ -800,9 +820,9 @@ export default function Facilities() {
               color="#807D8A"
               textAlign="center"
               fontSize="12px"
-              font-style="normal"
+              fontStyle="normal"
               fontWeight="600"
-              line-height="26px"
+              lineHeight="26px"
             >
               Facilities
             </Flex>
@@ -811,9 +831,9 @@ export default function Facilities() {
               w="280px"
               textAlign="center"
               fontSize="10px"
-              font-style="normal"
+              fontStyle="normal"
               fontWeight="600"
-              line-height="25px"
+              lineHeight="25px"
             >
               Kami menyediakan berbagai fasilitas yang bisa menunjang
               kreativitasmu{" "}
@@ -845,9 +865,9 @@ export default function Facilities() {
                   color="#1C2C5A"
                   textAlign="center"
                   fontSize="20px"
-                  font-style="normal"
-                  font-weight="500"
-                  line-height="28px"
+                  fontStyle="normal"
+                  fontWeight="500"
+                  lineHeight="28px"
                   textTransform="capitalize"
                 >
                   <Popover placement="bottom">
@@ -897,9 +917,9 @@ export default function Facilities() {
                   color="#1C2C5A"
                   textAlign="center"
                   fontSize="20px"
-                  font-style="normal"
-                  font-weight="500"
-                  line-height="28px"
+                  fontStyle="normal"
+                  fontWeight="500"
+                  lineHeight="28px"
                   textTransform="capitalize"
                 >
                   <Popover placement="bottom">
@@ -948,9 +968,9 @@ export default function Facilities() {
                   color="#1C2C5A"
                   textAlign="center"
                   fontSize="20px"
-                  font-style="normal"
-                  font-weight="500"
-                  line-height="28px"
+                  fontStyle="normal"
+                  fontWeight="500"
+                  lineHeight="28px"
                   textTransform="capitalize"
                 >
                   <Popover placement="bottom">
@@ -1009,9 +1029,9 @@ export default function Facilities() {
                   color="#1C2C5A"
                   textAlign="center"
                   fontSize="20px"
-                  font-style="normal"
-                  font-weight="500"
-                  line-height="28px"
+                  fontStyle="normal"
+                  fontWeight="500"
+                  lineHeight="28px"
                   textTransform="capitalize"
                 >
                   <Popover placement="bottom">
@@ -1060,9 +1080,9 @@ export default function Facilities() {
                   color="#1C2C5A"
                   textAlign="center"
                   fontSize="20px"
-                  font-style="normal"
-                  font-weight="500"
-                  line-height="28px"
+                  fontStyle="normal"
+                  fontWeight="500"
+                  lineHeight="28px"
                   textTransform="capitalize"
                 >
                   <Popover placement="bottom">
@@ -1112,9 +1132,9 @@ export default function Facilities() {
                   color="#1C2C5A"
                   textAlign="center"
                   fontSize="20px"
-                  font-style="normal"
-                  font-weight="500"
-                  line-height="28px"
+                  fontStyle="normal"
+                  fontWeight="500"
+                  lineHeight="28px"
                   textTransform="capitalize"
                 >
                   <Popover placement="bottom">

@@ -188,7 +188,7 @@ export default function FAQ() {
           <Flex
             color="#1C2C5A"
             textAlign="center"
-            fontSize="60px"
+            fontSize="16px"
             font-style="normal"
             font-weight="600"
             line-height="70px"
@@ -211,13 +211,19 @@ export default function FAQ() {
                 <AccordionItem>
                   <h2>
                     <AccordionButton>
-                      <Box as="span" flex="1" textAlign="left" w="768px">
+                      <Box
+                        as="span"
+                        flex="1"
+                        textAlign="left"
+                        w="700px"
+                        fontSize={"18px"}
+                      >
                         Apa itu Substitute Makerspace?
                       </Box>
                       <AccordionIcon />
                     </AccordionButton>
                   </h2>
-                  <AccordionPanel pb={4} w="768px">
+                  <AccordionPanel pb={4} w="700px">
                     Substitute Makerspace merupakan wadah bagi para
                     individu/kelompok kreatif untuk mendapatkan kemudahan akses
                     dan fasilitas lengkap dalam menjangkau kegiatan, peralatan,
@@ -228,13 +234,19 @@ export default function FAQ() {
                 <AccordionItem>
                   <h2>
                     <AccordionButton>
-                      <Box as="span" flex="1" textAlign="left" w="768px">
+                      <Box
+                        as="span"
+                        flex="1"
+                        textAlign="left"
+                        w="700px"
+                        fontSize={"18px"}
+                      >
                         Apa sih fokus utama kami?
                       </Box>
                       <AccordionIcon />
                     </AccordionButton>
                   </h2>
-                  <AccordionPanel pb={4} w="768px">
+                  <AccordionPanel pb={4} w="700px" fontSize={"18px"}>
                     <UnorderedList>
                       <ListItem>Mengenalkan marker movement</ListItem>
                       <ListItem>
@@ -255,13 +267,19 @@ export default function FAQ() {
                 <AccordionItem>
                   <h2>
                     <AccordionButton>
-                      <Box as="span" flex="1" textAlign="left" w="768px">
+                      <Box
+                        as="span"
+                        flex="1"
+                        textAlign="left"
+                        w="700px"
+                        fontSize={"18px"}
+                      >
                         Gimana sih kalau mau daftar?
                       </Box>
                       <AccordionIcon />
                     </AccordionButton>
                   </h2>
-                  <AccordionPanel pb={4} w="768px">
+                  <AccordionPanel pb={4} w="700px">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                     do eiusmod tempor incididunt ut labore et dolore magna
                     aliqua. Ut enim ad minim veniam, quis nostrud exercitation
@@ -271,13 +289,19 @@ export default function FAQ() {
                 <AccordionItem>
                   <h2>
                     <AccordionButton>
-                      <Box as="span" flex="1" textAlign="left" w="768px">
+                      <Box
+                        as="span"
+                        flex="1"
+                        textAlign="left"
+                        w="700px"
+                        fontSize={"18px"}
+                      >
                         Gimana sih lihat event terupdate?
                       </Box>
                       <AccordionIcon />
                     </AccordionButton>
                   </h2>
-                  <AccordionPanel pb={4} w="768px">
+                  <AccordionPanel pb={4} w="700px">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                     do eiusmod tempor incididunt ut labore et dolore magna
                     aliqua. Ut enim ad minim veniam, quis nostrud exercitation
@@ -287,14 +311,20 @@ export default function FAQ() {
                 <AccordionItem>
                   <h2>
                     <AccordionButton>
-                      <Box as="span" flex="1" textAlign="left" w="768px">
+                      <Box
+                        as="span"
+                        flex="1"
+                        textAlign="left"
+                        w="700px"
+                        fontSize={"18px"}
+                      >
                         Jika ada yang saya ingin tanyakan , saya bisa hubungi
                         siapa?
                       </Box>
                       <AccordionIcon />
                     </AccordionButton>
                   </h2>
-                  <AccordionPanel pb={4} w="768px">
+                  <AccordionPanel pb={4} w="700px">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                     do eiusmod tempor incididunt ut labore et dolore magna
                     aliqua. Ut enim ad minim veniam, quis nostrud exercitation
@@ -304,13 +334,19 @@ export default function FAQ() {
                 <AccordionItem>
                   <h2>
                     <AccordionButton>
-                      <Box as="span" flex="1" textAlign="left" w="768px">
+                      <Box
+                        as="span"
+                        flex="1"
+                        textAlign="left"
+                        w="700px"
+                        fontSize={"18px"}
+                      >
                         Dimana sih kantor Substitute Makerspace?
                       </Box>
                       <AccordionIcon />
                     </AccordionButton>
                   </h2>
-                  <AccordionPanel pb={4} w="768px">
+                  <AccordionPanel pb={4} w="700px">
                     Jl. Pandugo Baru XIII, Penjaringan Sari, Surabaya, Jawa
                     Timur, Indonesia 60297
                   </AccordionPanel>

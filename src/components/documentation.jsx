@@ -209,7 +209,7 @@ export default function Documentation() {
           <Flex
             color="#1C2C5A"
             textAlign="center"
-            fontSize="60px"
+            fontSize="16px"
             fontStyle="normal"
             fontWeight="600"
             lineHeight="70px"
@@ -217,13 +217,7 @@ export default function Documentation() {
             Documentation
           </Flex>
           <Center>
-            <Box
-              position={"relative"}
-              py="10px"
-              height={"524px"}
-              width={"1321px"}
-              overflow={"hidden"}
-            >
+            <Box position={"relative"} w="655px" h="335px" overflow={"hidden"}>
               {/* CSS files for react-slick */}
               <link
                 rel="stylesheet"
@@ -288,11 +282,12 @@ export default function Documentation() {
                 {data.map((card, index) => (
                   <Box
                     key={index}
-                    height={"6xl"}
                     position="relative"
                     backgroundPosition="center"
                     backgroundRepeat="no-repeat"
                     backgroundSize="cover"
+                    w="655px"
+                    h="335px"
                     backgroundImage={`url(${card.image})`}
                   >
                     {/* This is the block you need to change, to customize the caption */}

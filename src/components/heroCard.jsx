@@ -13,6 +13,7 @@ import IG from "../assets/IG.png";
 import FB from "../assets/FB.png";
 import HERO from "../assets/HERO1.jpg";
 import HERO2 from "../assets/HERO2.jpg";
+import MIDHERO from "../assets/MEDHERO.jpg";
 export default function Hero() {
   const [kecil] = useMediaQuery("(min-width: 320px)");
   const [medium] = useMediaQuery("(min-width: 767px)");
@@ -67,11 +68,11 @@ export default function Hero() {
                 padding="18px 32px"
                 alignItems="center"
                 gap="10px"
-                w={["71px", "107px", "158px"]}
-                h={["28px", "40px", "64px"]}
+                w={["158px"]}
+                h={["64px"]}
                 borderRadius="12px"
                 background="#1C2C5A"
-                fontSize={["8px", "12px", "18px"]}
+                fontSize={["18px"]}
                 color={"white"}
                 _hover={{
                   bgColor: "#F0D411",
@@ -80,8 +81,8 @@ export default function Hero() {
               >
                 <Image
                   src={WA}
-                  w={["14px", "18px", "21px"]}
-                  h={["14px", "18px", "21px"]}
+                  w={["21px"]}
+                  h={["21px"]}
                   _hover={{
                     color: "black",
                   }}
@@ -94,41 +95,42 @@ export default function Hero() {
       ) : medium ? (
         <Flex
           display="flex"
-          p={["10px", "20px", "120px 120px"]}
+          p={["20px"]}
           flexDirection="column"
           alignItems={"center"}
           justifyContent={"center"}
           gap="10px"
+          flexShrink={"0"}
         >
           <Center
-            width="100%"
-            maxW={"1200px"}
-            height={["266px", "444px", "726px"]}
-            bgImage={HERO}
+            w={"736px"}
+            h={"444px"}
+            bgImage={MIDHERO}
             borderRadius={"50px"}
           >
             <Center
               display="flex"
-              w="100%"
-              height={["123px", "210px", "396px"]}
-              padding={["10px 15px", "20px 50px", "20px 50px"]}
+              w={"736px"}
+              h={"210px"}
+              padding={"20px 50px"}
               flexDirection="column"
               alignItems="flex-start"
-              gap={["10px", "15px", "18px"]}
+              gap={"15px"}
+              position={"absolute"}
               background={"rgba(255, 250, 215, 0.50)"}
             >
               <Flex
                 color="#1C2C5A"
-                fontSize={["18px", "28px", "60px"]}
+                fontSize={["28px"]}
                 fontWeight="600"
-                lineHeight="70px"
+                lineHeight="50px"
               >
                 An access to tools and knowledges
               </Flex>
               <Flex
                 fontSize="18px"
                 fontStyle="normal"
-                lineHeight="28px"
+                lineHeight="50px"
                 gap="0px"
               >
                 Berdiri sejak 2019
@@ -139,11 +141,11 @@ export default function Hero() {
                 padding="18px 32px"
                 alignItems="center"
                 gap="10px"
-                w={["71px", "107px", "158px"]}
-                h={["28px", "40px", "64px"]}
+                w={["107px"]}
+                h={["40px"]}
                 borderRadius="12px"
                 background="#1C2C5A"
-                fontSize={["8px", "12px", "18px"]}
+                fontSize={["12px"]}
                 color={"white"}
                 _hover={{
                   bgColor: "#F0D411",
@@ -152,8 +154,8 @@ export default function Hero() {
               >
                 <Image
                   src={WA}
-                  w={["14px", "18px", "21px"]}
-                  h={["14px", "18px", "21px"]}
+                  w={["18px"]}
+                  h={["18px"]}
                   _hover={{
                     color: "black",
                   }}

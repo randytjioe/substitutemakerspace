@@ -7,6 +7,8 @@ import {
   Link,
   useMediaQuery,
 } from "@chakra-ui/react";
+import { HashLink } from "react-router-hash-link";
+import { Link as ReachLink } from "react-router-dom";
 import logo from "../assets/logo.png";
 import WA from "../assets/WA.png";
 import YTB from "../assets/YTB.png";
@@ -14,7 +16,6 @@ import IG from "../assets/IG.png";
 import FB from "../assets/FB.png";
 import HERO from "../assets/HERO.png";
 import location from "../assets/location.png";
-import { Link as ReachLink } from "react-router-dom";
 export default function Footer() {
   const [kecil] = useMediaQuery("(min-width: 320px)");
   const [medium] = useMediaQuery("(min-width: 767px)");
@@ -111,7 +112,9 @@ export default function Footer() {
                 letterSpacing="2px"
                 textTransform="uppercase"
               >
-                about me
+                <HashLink smooth to="/#aboutme">
+                  About Me
+                </HashLink>
               </Flex>
               <Flex
                 color="#9A95AE"
@@ -120,7 +123,9 @@ export default function Footer() {
                 fontWeight="400"
                 lineHeight="24px"
               >
-                Product & Services
+                <HashLink smooth to="/#products">
+                  Product & Services
+                </HashLink>
               </Flex>
               <Flex
                 color="#9A95AE"
@@ -129,7 +134,9 @@ export default function Footer() {
                 fontWeight="400"
                 lineHeight="24px"
               >
-                Facilities
+                <HashLink smooth to="/#facilities">
+                  Facilities
+                </HashLink>
               </Flex>
               <Flex
                 color="#9A95AE"
@@ -138,7 +145,9 @@ export default function Footer() {
                 fontWeight="400"
                 lineHeight="24px"
               >
-                FAQ
+                <HashLink smooth to="/#faq">
+                  FAQ
+                </HashLink>
               </Flex>
               <Flex
                 color="#9A95AE"
@@ -147,7 +156,9 @@ export default function Footer() {
                 fontWeight="400"
                 lineHeight="24px"
               >
-                Documentation
+                <HashLink smooth to="/#documentation">
+                  Documentation
+                </HashLink>
               </Flex>
             </Flex>
             <Flex
@@ -155,7 +166,8 @@ export default function Footer() {
               padding="10px"
               justifyContent="center"
               alignItems="center"
-              gap="10px"
+              gap="50px"
+              flexDir={"column"}
               width="527px"
             >
               <Text
@@ -174,6 +186,7 @@ export default function Footer() {
                 fontStyle="normal"
                 fontWeight="400"
                 lineHeight="28px"
+                textAlign={"center"}
               >
                 {" "}
                 is to become a creative space where arts, culture, business, and
@@ -193,18 +206,19 @@ export default function Footer() {
         >
           <Flex
             display="flex"
-            width="1440px"
-            padding="0px 120px"
+            width="767px"
+            padding="0px 35px"
             alignItems="center"
-            gap="100px"
+            gap="50px"
           >
             <Flex
               display="flex"
               flexDirection="column"
               alignItems="flex-start"
               gap="44px"
+              w="263px"
             >
-              <Image src={logo} />
+              <Image src={logo} w="219px" h="55px" />
               <Flex
                 display="flex"
                 justifyContent="center"
@@ -213,9 +227,9 @@ export default function Footer() {
               >
                 <Image width="24px" height="24px" src={location} />
                 <Flex
-                  width="268px"
+                  width="173px"
                   color="#1C2C5A"
-                  fontSize="14px"
+                  fontSize="10px"
                   fontStyle="normal"
                   fontWeight="400"
                   textAlign={"center"}
@@ -227,7 +241,7 @@ export default function Footer() {
               </Flex>
               <Flex
                 display="flex"
-                width="302px"
+                width="236px"
                 justifyContent="center"
                 alignItems="center"
                 gap="36px"
@@ -274,43 +288,53 @@ export default function Footer() {
                 letterSpacing="2px"
                 textTransform="uppercase"
               >
-                about me
+                <HashLink smooth to="/#aboutme">
+                  About Me
+                </HashLink>
               </Flex>
               <Flex
                 color="#9A95AE"
-                fontSize="14px"
+                fontSize="12px"
                 fontStyle="normal"
                 fontWeight="400"
                 lineHeight="24px"
               >
-                Product & Services
+                <HashLink smooth to="/#products">
+                  Product & Services
+                </HashLink>
               </Flex>
               <Flex
                 color="#9A95AE"
-                fontSize="14px"
+                fontSize="12px"
                 fontStyle="normal"
                 fontWeight="400"
                 lineHeight="24px"
               >
-                Facilities
+                <HashLink smooth to="/#facilities">
+                  Facilities
+                </HashLink>
               </Flex>
               <Flex
                 color="#9A95AE"
-                fontSize="14px"
+                fontSize="12px"
                 fontStyle="normal"
                 fontWeight="400"
                 lineHeight="24px"
               >
-                FAQ
+                <HashLink smooth to="/#faq">
+                  FAQ
+                </HashLink>
               </Flex>
               <Flex
                 color="#9A95AE"
-                fontSize="14px"
+                fontSize="12px"
                 fontStyle="normal"
                 fontWeight="400"
                 lineHeight="24px"
               >
-                Documentation
+                <HashLink smooth to="/#documentation">
+                  Documentation
+                </HashLink>
               </Flex>
             </Flex>
             <Flex
@@ -318,8 +342,9 @@ export default function Footer() {
               padding="10px"
               justifyContent="center"
               alignItems="center"
+              flexDir={"column"}
               gap="10px"
-              width="527px"
+              width="250px"
             >
               <Text
                 color="#F0D411"
@@ -333,7 +358,7 @@ export default function Footer() {
               </Text>
               <Flex
                 color="var(--grey-900, #28233C)"
-                fontSize="18px"
+                fontSize="12px"
                 fontStyle="normal"
                 fontWeight="400"
                 lineHeight="28px"
@@ -441,7 +466,9 @@ export default function Footer() {
               letterSpacing="2px"
               textTransform="uppercase"
             >
-              about me
+              <HashLink smooth to="/#aboutme">
+                About Me
+              </HashLink>
             </Flex>
             <Flex
               color="#9A95AE"
@@ -450,7 +477,9 @@ export default function Footer() {
               fontWeight="400"
               lineHeight="24px"
             >
-              Product & Services
+              <HashLink smooth to="/#products">
+                Product & Services
+              </HashLink>
             </Flex>
             <Flex
               color="#9A95AE"
@@ -459,7 +488,9 @@ export default function Footer() {
               fontWeight="400"
               lineHeight="24px"
             >
-              Facilities
+              <HashLink smooth to="/#facilities">
+                Facilities
+              </HashLink>
             </Flex>
             <Flex
               color="#9A95AE"
@@ -468,7 +499,9 @@ export default function Footer() {
               fontWeight="400"
               lineHeight="24px"
             >
-              FAQ
+              <HashLink smooth to="/#faq">
+                FAQ
+              </HashLink>
             </Flex>
             <Flex
               color="#9A95AE"
@@ -477,7 +510,9 @@ export default function Footer() {
               fontWeight="400"
               lineHeight="24px"
             >
-              Documentation
+              <HashLink smooth to="/#documentation">
+                Documentation
+              </HashLink>
             </Flex>
           </Flex>
           <Flex

@@ -110,18 +110,21 @@ export default function AboutMe() {
       ) : medium ? (
         <Center
           display="flex"
-          padding="50px 120px"
+          padding="50px 10px"
           flexDirection="column"
           alignItems="center"
           gap="29px"
-          py="114px"
+          h="724px"
           id="aboutme"
         >
           <Flex
             display="flex"
+            width="767px"
+            height="389px"
             flexDirection="column"
             alignItems="center"
-            gap="4px"
+            gap="30px"
+            flexShrink="0"
           >
             <Flex
               color="#807D8A"
@@ -132,7 +135,6 @@ export default function AboutMe() {
               fontWeight="600"
               lineHeight="26px"
               display="flex"
-              width="1200px"
               padding="10px"
               justifyContent="center"
               alignItems="center"
@@ -140,53 +142,41 @@ export default function AboutMe() {
             >
               About Me
             </Flex>
-          </Flex>
-          <Flex
-            display="flex"
-            justifyContent="center"
-            padding={"10px"}
-            w={"1200px"}
-            h="470px"
-            flexShrink={"0"}
-            alignItems="center"
-            gap="30px"
-          >
-            <Image src={ASK}></Image>
+
             <Flex
               display="flex"
-              padding="25px 0px"
-              flexDirection="column"
               justifyContent="center"
+              padding={"10px"}
+              w="767px"
+              h="552px"
+              flexShrink={"0"}
               alignItems="center"
-              gap="42px"
+              flexDir={"column"}
+              gap="50px"
             >
+              <Image src={ASK} width="442.5px" height="252px"></Image>
+
               <Flex
-                display="flex"
-                width="500px"
-                flexDirection="column"
-                gap="32px"
+                color="#1C2C5A"
+                fontSize="24px"
+                fontStyle="normal"
+                fontWeight="800"
+                lineHeight="28px"
+                textAlign={"center"}
               >
-                <Flex
-                  color="#1C2C5A"
-                  fontSize="28px"
-                  fontStyle="normal"
-                  fontWeight="800"
-                  lineHeight="28px"
-                >
-                  Substitute Makerspace
-                </Flex>
-                <Flex fontSize="18px">
-                  merupakan wadah bagi para individu/kelompok kreatif untuk
-                  mendapatkan kemudahan akses dan fasilitas lengkap dalam
-                  menjangkau kegiatan, peralatan, hingga pengetahuan dalam
-                  menciptakan berbagai jenis produk. 
-                </Flex>
-                <Flex fontSize="18px">
-                  Visi kami adalah menjadi tempat kreatif yang menggabungkan
-                  nilai-nilai seni, budaya, bisnis, dan teknologi untuk
-                  membangkitkan inspirasi dalam memajukan ekonomi kreatif
-                  melalui inovasi terbaru.
-                </Flex>
+                Substitute Makerspace
+              </Flex>
+              <Flex fontSize="14px" w="600px" textAlign={"center"}>
+                merupakan wadah bagi para individu/kelompok kreatif untuk
+                mendapatkan kemudahan akses dan fasilitas lengkap dalam
+                menjangkau kegiatan, peralatan, hingga pengetahuan dalam
+                menciptakan berbagai jenis produk. 
+              </Flex>
+              <Flex fontSize="14px" w="600px" textAlign={"center"}>
+                Visi kami adalah menjadi tempat kreatif yang menggabungkan
+                nilai-nilai seni, budaya, bisnis, dan teknologi untuk
+                membangkitkan inspirasi dalam memajukan ekonomi kreatif melalui
+                inovasi terbaru.
               </Flex>
             </Flex>
           </Flex>
@@ -197,7 +187,8 @@ export default function AboutMe() {
           padding="10px 25px"
           flexDirection="column"
           alignItems="center"
-          gap="25px"
+          gap="15px"
+          py="120px"
           id="aboutme"
         >
           <Flex
@@ -212,9 +203,8 @@ export default function AboutMe() {
               fontSize="12px"
               fontStyle="normal"
               fontWeight="600"
-              lineHeight="26px"
+              lineHeight="15px"
               display="flex"
-              width="100%"
               padding="10px"
               justifyContent="center"
               alignItems="center"
@@ -226,13 +216,10 @@ export default function AboutMe() {
           <Flex
             display="flex"
             justifyContent="center"
-            padding={"10px"}
-            w="100%"
-            h="470px"
             flexShrink={"0"}
             alignItems="center"
             flexDir={"column"}
-            gap="30px"
+            gap="20px"
           >
             <Image src={ASK1}></Image>
             <Flex
@@ -248,23 +235,24 @@ export default function AboutMe() {
                 width="100%"
                 flexDirection="column"
                 gap="15px"
+                alignItems={"center"}
               >
                 <Flex
                   color="#1C2C5A"
-                  fontSize="14px"
+                  fontSize="18px"
                   fontStyle="normal"
                   fontWeight="800"
                   lineHeight="28px"
                 >
                   Substitute Makerspace
                 </Flex>
-                <Flex fontSize="8px">
+                <Flex fontSize="8px" alignItems={"center"}>
                   merupakan wadah bagi para individu/kelompok kreatif untuk
                   mendapatkan kemudahan akses dan fasilitas lengkap dalam
                   menjangkau kegiatan, peralatan, hingga pengetahuan dalam
                   menciptakan berbagai jenis produk. 
                 </Flex>
-                <Flex fontSize="8px" py="2px">
+                <Flex fontSize="8px" py="2px" alignItems={"center"}>
                   Visi kami adalah menjadi tempat kreatif yang menggabungkan
                   nilai-nilai seni, budaya, bisnis, dan teknologi untuk
                   membangkitkan inspirasi dalam memajukan ekonomi kreatif

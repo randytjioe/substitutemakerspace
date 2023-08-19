@@ -335,13 +335,12 @@ export default function Documentation() {
           flexDirection="column"
           alignItems="center"
           gap="14px"
-          py="114px"
           id="documentation"
         >
           <Flex
             color="#1C2C5A"
             textAlign="center"
-            fontSize="60px"
+            fontSize="12px"
             fontStyle="normal"
             fontWeight="600"
             lineHeight="70px"
@@ -352,8 +351,8 @@ export default function Documentation() {
             <Box
               position={"relative"}
               py="10px"
-              height={"524px"}
-              width={"1321px"}
+              height={"154px"}
+              width={"274px"}
               overflow={"hidden"}
             >
               {/* CSS files for react-slick */}
@@ -372,7 +371,7 @@ export default function Documentation() {
               <IconButton
                 aria-label="left-arrow"
                 colorScheme="messenger"
-                borderRadius="full"
+                borderRadius="100%"
                 position="absolute"
                 left={side}
                 top={top}
@@ -398,30 +397,12 @@ export default function Documentation() {
               </IconButton>
               {/* Slider */}
               <Slider {...settings} ref={(slider) => setSlider(slider)}>
-                {/* {data?.map((product, index) => (
-                <>
-                  <Flex flexDir={"column"}>
-                    <Box
-                      key={index}
-                      position="relative"
-                      backgroundPosition="center"
-                      backgroundRepeat="no-repeat"
-                      backgroundSize="cover"
-                      backgroundImage={product.image}
-                      height={"524px"}
-                      width={"1321px"}
-                    />
-                    <Center padding={"10px"} color="black" fontSize={"50px"}>
-                      {product.caption}
-                    </Center>
-                  </Flex>
-                </>
-              ))} */}
                 {data.map((card, index) => (
                   <Box
                     key={index}
-                    height={"6xl"}
                     position="relative"
+                    h="154px"
+                    w="274px"
                     backgroundPosition="center"
                     backgroundRepeat="no-repeat"
                     backgroundSize="cover"
@@ -430,7 +411,7 @@ export default function Documentation() {
                     {/* This is the block you need to change, to customize the caption */}
                     <Container
                       size="container.lg"
-                      height="600px"
+                      height="100px"
                       position="relative"
                     >
                       <Stack

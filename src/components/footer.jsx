@@ -218,6 +218,7 @@ export default function Footer() {
                   fontSize="14px"
                   fontStyle="normal"
                   fontWeight="400"
+                  textAlign={"center"}
                   lineHeight="26px"
                 >
                   Jl. Pandugo Baru XIII, Penjaringan Sari, Surabaya, Jawa Timur,
@@ -351,14 +352,15 @@ export default function Footer() {
           padding="50px 0px"
           flexDirection="column"
           alignItems="center"
-          gap="28px"
+          gap="50px"
         >
           <Flex
             display="flex"
-            width="1440px"
-            padding="0px 120px"
+            width="300px"
+            padding="0px 35px"
+            flexDirection="column"
             alignItems="center"
-            gap="100px"
+            gap="50px"
           >
             <Flex
               display="flex"
@@ -377,7 +379,7 @@ export default function Footer() {
                 <Flex
                   width="268px"
                   color="#1C2C5A"
-                  fontSize="14px"
+                  fontSize="10px"
                   fontStyle="normal"
                   fontWeight="400"
                   lineHeight="26px"
@@ -386,105 +388,21 @@ export default function Footer() {
                   Indonesia 60297
                 </Flex>
               </Flex>
-              <Flex
-                display="flex"
-                width="302px"
-                justifyContent="center"
-                alignItems="center"
-                gap="36px"
-              >
-                <Link
-                  to="https://api.whatsapp.com/send/?phone=6287855476158&text&type=phone_number&app_absent=0"
-                  as={ReachLink}
-                >
-                  <Image src={WA} w="24px" h="24px" />
-                </Link>
-                <Link
-                  to="https://www.instagram.com/substitute.makerspace/?hl=en"
-                  as={ReachLink}
-                >
-                  <Image src={IG} w="24px" h="24px" />
-                </Link>
-                <Link
-                  to="https://www.facebook.com/substitutemakerspace.sub/"
-                  as={ReachLink}
-                >
-                  <Image src={FB} width="21px" height="20.874px" />
-                </Link>
-                <Link
-                  to="https://www.youtube.com/channel/UCIIUT6oYIe9rVNJScXi83NA"
-                  as={ReachLink}
-                >
-                  <Image src={YTB} width="23.997px" height="18px" />
-                </Link>
-              </Flex>
             </Flex>
-            <Flex
-              display="flex"
-              height="192px"
-              flexDirection="column"
-              alignItems="flex-start"
-              gap="18px"
-            >
-              <Flex
-                color="#1C2C5A"
-                fontSize="14px"
-                fontStyle="normal"
-                fontWeight="600"
-                lineHeight="24px"
-                letterSpacing="2px"
-                textTransform="uppercase"
-              >
-                about me
-              </Flex>
-              <Flex
-                color="#9A95AE"
-                fontSize="14px"
-                fontStyle="normal"
-                fontWeight="400"
-                lineHeight="24px"
-              >
-                Product & Services
-              </Flex>
-              <Flex
-                color="#9A95AE"
-                fontSize="14px"
-                fontStyle="normal"
-                fontWeight="400"
-                lineHeight="24px"
-              >
-                Facilities
-              </Flex>
-              <Flex
-                color="#9A95AE"
-                fontSize="14px"
-                fontStyle="normal"
-                fontWeight="400"
-                lineHeight="24px"
-              >
-                FAQ
-              </Flex>
-              <Flex
-                color="#9A95AE"
-                fontSize="14px"
-                fontStyle="normal"
-                fontWeight="400"
-                lineHeight="24px"
-              >
-                Documentation
-              </Flex>
-            </Flex>
+
             <Flex
               display="flex"
               padding="10px"
               justifyContent="center"
               alignItems="center"
+              flexDir={"column"}
               gap="10px"
-              width="527px"
+              width="250px"
             >
               <Text
                 color="#F0D411"
                 fontSize="50px"
+                textAlign={"center"}
                 fontStyle="normal"
                 fontWeight="800"
                 lineHeight="28px"
@@ -494,9 +412,10 @@ export default function Footer() {
               </Text>
               <Flex
                 color="var(--grey-900, #28233C)"
-                fontSize="18px"
+                fontSize="12px"
                 fontStyle="normal"
                 fontWeight="400"
+                textAlign={"center"}
                 lineHeight="28px"
               >
                 {" "}
@@ -505,6 +424,103 @@ export default function Footer() {
                 innovation to spur the creative economy
               </Flex>
             </Flex>
+          </Flex>
+          <Flex
+            display="flex"
+            height="192px"
+            flexDirection="column"
+            alignItems="center"
+            gap="18px"
+          >
+            <Flex
+              color="#1C2C5A"
+              fontSize="14px"
+              fontStyle="normal"
+              fontWeight="600"
+              lineHeight="24px"
+              letterSpacing="2px"
+              textTransform="uppercase"
+            >
+              about me
+            </Flex>
+            <Flex
+              color="#9A95AE"
+              fontSize="12px"
+              fontStyle="normal"
+              fontWeight="400"
+              lineHeight="24px"
+            >
+              Product & Services
+            </Flex>
+            <Flex
+              color="#9A95AE"
+              fontSize="12px"
+              fontStyle="normal"
+              fontWeight="400"
+              lineHeight="24px"
+            >
+              Facilities
+            </Flex>
+            <Flex
+              color="#9A95AE"
+              fontSize="12px"
+              fontStyle="normal"
+              fontWeight="400"
+              lineHeight="24px"
+            >
+              FAQ
+            </Flex>
+            <Flex
+              color="#9A95AE"
+              fontSize="12px"
+              fontStyle="normal"
+              fontWeight="400"
+              lineHeight="24px"
+            >
+              Documentation
+            </Flex>
+          </Flex>
+          <Flex
+            display="flex"
+            width="302px"
+            justifyContent="center"
+            alignItems="center"
+            gap="36px"
+          >
+            <Link
+              to="https://api.whatsapp.com/send/?phone=6287855476158&text&type=phone_number&app_absent=0"
+              as={ReachLink}
+            >
+              <Image src={WA} w="24px" h="24px" />
+            </Link>
+            <Link
+              to="https://www.instagram.com/substitute.makerspace/?hl=en"
+              as={ReachLink}
+            >
+              <Image src={IG} w="24px" h="24px" />
+            </Link>
+            <Link
+              to="https://www.facebook.com/substitutemakerspace.sub/"
+              as={ReachLink}
+            >
+              <Image src={FB} width="21px" height="20.874px" />
+            </Link>
+            <Link
+              to="https://www.youtube.com/channel/UCIIUT6oYIe9rVNJScXi83NA"
+              as={ReachLink}
+            >
+              <Image src={YTB} width="23.997px" height="18px" />
+            </Link>
+          </Flex>
+          <Flex
+            color="#1C2C5A"
+            textAlign="center"
+            fontSize="14px"
+            fontStyle="normal"
+            fontWeight="400"
+            lineHeight="24px"
+          >
+            © Copyright 2023 | Randy
           </Flex>
         </Flex>
       ) : null}

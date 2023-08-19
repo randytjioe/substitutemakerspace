@@ -191,12 +191,7 @@ export default function Hero() {
               gap="5px"
               background={"rgba(255, 250, 215, 0.50)"}
             >
-              <Flex
-                color="#1C2C5A"
-                fontSize={["14px"]}
-                fontWeight="600"
-                lineHeight="70px"
-              >
+              <Flex color="#1C2C5A" fontSize={["14px"]} fontWeight="600">
                 An access to tools and knowledges
               </Flex>
               <Flex fontSize="10px" fontStyle="normal" lineHeight="28px">

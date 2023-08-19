@@ -21,6 +21,7 @@ import P5 from "../assets/P5.jpg";
 import { Link as ReachLink } from "react-router-dom";
 import Review from "../assets/Review.png";
 import Cart from "../assets/CART.png";
+import Cart1 from "../assets/cart1.png";
 export default function Product() {
   const [kecil] = useMediaQuery("(min-width: 320px)");
   const [medium] = useMediaQuery("(min-width: 767px)");
@@ -60,7 +61,6 @@ export default function Product() {
               fontSize="25px"
               fontStyle="normal"
               fontWeight="600"
-              lineHeight="70px"
               width="1200px"
             >
               Kami membantu proses pengembangan kreativitasmu di tiga bidang
@@ -467,7 +467,7 @@ export default function Product() {
                 dalam proses pengembangan
               </Flex>
               <Link
-                to="https://api.whatsapp.com/send/?phone=6287855476158&text&type=phone_number&app_absent=0"
+                to="https://api.whatsapp.com/send/?phone=6287855476158&text=Hallo,%20Saya%20mau%20mendaftar,%20Gimana%20caranya?&type=phone_number&app_absent=0"
                 as={ReachLink}
               >
                 <Flex
@@ -1010,7 +1010,6 @@ export default function Product() {
               fontSize="10px"
               fontStyle="normal"
               fontWeight="600"
-              lineHeight="70px"
             >
               Kami membantu proses pengembangan kreativitasmu di tiga bidang
               utama, yaitu 3D printing, wood working, dan sewing (menjahit)
@@ -1020,12 +1019,12 @@ export default function Product() {
 
           <Flex
             display="flex"
-            width="1440px"
-            padding="0px 120px"
+            width="320px"
             alignItems="flex-start"
-            gap="50px"
+            flexDir={"column"}
+            gap="19px"
           >
-            <Flex width="313px" height="322px" flex-shrink="0" bgImage={P1}>
+            <Flex width="256px" height="276px" flex-shrink="0" bgImage={P1}>
               <Flex
                 display="flex"
                 padding="2px 19px"
@@ -1033,10 +1032,10 @@ export default function Product() {
                 alignItems="center"
                 gap="10px"
                 background={"#B02327"}
-                w="143px"
-                h="28px"
+                w="88px"
+                h="20px"
                 color="#D1CEDB"
-                fontSize="14px"
+                fontSize="10px"
                 fontStyle="normal"
                 fontWeight="400"
                 lineHeight="24px"
@@ -1055,7 +1054,7 @@ export default function Product() {
               <Image src={Review}></Image>
               <Flex
                 color="var(--grey-900, #28233C)"
-                fontSize="25px"
+                fontSize="14px"
                 fontStyle="normal"
                 fontWeight="800"
                 lineHeight="28px"
@@ -1064,11 +1063,11 @@ export default function Product() {
               </Flex>
               <Flex
                 color="#000"
-                fontSize="20px"
+                fontSize="10px"
                 fontStyle="normal"
                 fontWeight="400"
                 lineHeight="28px"
-                width="839px"
+                width="290px"
               >
                 Layanan workshop dan sesi seminar informatif dirancang untuk
                 memberikan manfaat nyata melalui kesempatan untuk belajar secara
@@ -1078,23 +1077,23 @@ export default function Product() {
               </Flex>
               <Button
                 display="flex"
-                padding="18px 32px"
+                padding="18px 10px"
                 alignItems="center"
                 gap="10px"
                 color="white"
                 borderRadius="12px"
                 background="#1C2C5A"
-                w="158px"
-                h="64px"
+                w="106px"
+                h="46px"
                 _hover={{
                   bgColor: "#F0D411",
                   color: "black",
                 }}
               >
-                <Image src={Cart}></Image>
+                <Image src={Cart} w="24px" h="24px"></Image>
                 <Flex
                   textAlign="right"
-                  fontSize="18px"
+                  fontSize="12px"
                   fontStyle="normal"
                   fontWeight="700"
                   lineHeight="28px"
@@ -1108,12 +1107,12 @@ export default function Product() {
           </Flex>
           <Flex
             display="flex"
-            width="1440px"
-            padding="0px 120px"
+            width="320px"
             alignItems="flex-start"
-            gap="50px"
+            flexDir={"column"}
+            gap="19px"
           >
-            <Flex width="313px" height="322px" flex-shrink="0" bgImage={P2}>
+            <Flex width="256px" height="276px" flex-shrink="0" bgImage={P1}>
               <Flex
                 display="flex"
                 padding="2px 19px"
@@ -1121,13 +1120,14 @@ export default function Product() {
                 alignItems="center"
                 gap="10px"
                 background={"#B02327"}
-                w="143px"
-                h="28px"
+                w="88px"
+                h="20px"
                 color="#D1CEDB"
-                fontSize="14px"
+                fontSize="10px"
                 fontStyle="normal"
                 fontWeight="400"
                 lineHeight="24px"
+                margin="1rem"
               >
                 Recommended
               </Flex>
@@ -1142,44 +1142,46 @@ export default function Product() {
               <Image src={Review}></Image>
               <Flex
                 color="var(--grey-900, #28233C)"
-                fontSize="25px"
+                fontSize="14px"
                 fontStyle="normal"
                 fontWeight="800"
                 lineHeight="28px"
               >
-                Tools and Space for Rent
+                Workshop and Seminar
               </Flex>
               <Flex
                 color="#000"
-                fontSize="20px"
+                fontSize="10px"
                 fontStyle="normal"
                 fontWeight="400"
                 lineHeight="28px"
-                width="839px"
+                width="290px"
               >
-                Layanan ini akan memberikan solusi praktis bagi individu atau
-                kelompok yang membutuhkan akses ke peralatan khusus dan ruang
-                untuk mendukung mewujudkan proyek kreatif kamu.
+                Layanan workshop dan sesi seminar informatif dirancang untuk
+                memberikan manfaat nyata melalui kesempatan untuk belajar secara
+                langsung, berkolaborasi dengan sesama peserta, dan mendapatkan
+                pengalaman praktis mencakup berbagai topik untuk menciptakan
+                lokakarya kreatif bersama ahli di bidangnya.
               </Flex>
               <Button
                 display="flex"
-                padding="18px 32px"
+                padding="18px 10px"
                 alignItems="center"
                 gap="10px"
+                color="white"
                 borderRadius="12px"
                 background="#1C2C5A"
-                w="158px"
-                h="64px"
+                w="106px"
+                h="46px"
                 _hover={{
                   bgColor: "#F0D411",
                   color: "black",
                 }}
               >
-                <Image src={Cart}></Image>
+                <Image src={Cart} w="24px" h="24px"></Image>
                 <Flex
-                  color="#FFF"
                   textAlign="right"
-                  fontSize="18px"
+                  fontSize="12px"
                   fontStyle="normal"
                   fontWeight="700"
                   lineHeight="28px"
@@ -1193,12 +1195,12 @@ export default function Product() {
           </Flex>
           <Flex
             display="flex"
-            width="1440px"
-            padding="0px 120px"
+            width="320px"
             alignItems="flex-start"
-            gap="50px"
+            flexDir={"column"}
+            gap="19px"
           >
-            <Flex width="313px" height="322px" flex-shrink="0" bgImage={P3}>
+            <Flex width="256px" height="276px" flex-shrink="0" bgImage={P1}>
               <Flex
                 display="flex"
                 padding="2px 19px"
@@ -1206,13 +1208,14 @@ export default function Product() {
                 alignItems="center"
                 gap="10px"
                 background={"#B02327"}
-                w="143px"
-                h="28px"
+                w="88px"
+                h="20px"
                 color="#D1CEDB"
-                fontSize="14px"
+                fontSize="10px"
                 fontStyle="normal"
                 fontWeight="400"
                 lineHeight="24px"
+                margin="1rem"
               >
                 Recommended
               </Flex>
@@ -1227,43 +1230,46 @@ export default function Product() {
               <Image src={Review}></Image>
               <Flex
                 color="var(--grey-900, #28233C)"
-                fontSize="25px"
+                fontSize="14px"
                 fontStyle="normal"
                 fontWeight="800"
                 lineHeight="28px"
               >
-                Markers Incubation
+                Workshop and Seminar
               </Flex>
               <Flex
                 color="#000"
-                fontSize="20px"
+                fontSize="10px"
                 fontStyle="normal"
                 fontWeight="400"
                 lineHeight="28px"
-                width="839px"
+                width="290px"
               >
-                Layanan yang dirancang untuk membantu pengembangan ide kreatif
-                menjadi produk nyata.
+                Layanan workshop dan sesi seminar informatif dirancang untuk
+                memberikan manfaat nyata melalui kesempatan untuk belajar secara
+                langsung, berkolaborasi dengan sesama peserta, dan mendapatkan
+                pengalaman praktis mencakup berbagai topik untuk menciptakan
+                lokakarya kreatif bersama ahli di bidangnya.
               </Flex>
               <Button
                 display="flex"
-                padding="18px 32px"
+                padding="18px 10px"
                 alignItems="center"
                 gap="10px"
+                color="white"
                 borderRadius="12px"
                 background="#1C2C5A"
-                w="158px"
-                h="64px"
+                w="106px"
+                h="46px"
                 _hover={{
                   bgColor: "#F0D411",
                   color: "black",
                 }}
               >
-                <Image src={Cart}></Image>
+                <Image src={Cart} w="24px" h="24px"></Image>
                 <Flex
-                  color="#FFF"
                   textAlign="right"
-                  fontSize="18px"
+                  fontSize="12px"
                   fontStyle="normal"
                   fontWeight="700"
                   lineHeight="28px"
@@ -1277,12 +1283,12 @@ export default function Product() {
           </Flex>
           <Flex
             display="flex"
-            width="1440px"
-            padding="0px 120px"
+            width="320px"
             alignItems="flex-start"
-            gap="50px"
+            flexDir={"column"}
+            gap="19px"
           >
-            <Flex width="313px" height="322px" flex-shrink="0" bgImage={P4}>
+            <Flex width="256px" height="276px" flex-shrink="0" bgImage={P1}>
               <Flex
                 display="flex"
                 padding="2px 19px"
@@ -1290,13 +1296,14 @@ export default function Product() {
                 alignItems="center"
                 gap="10px"
                 background={"#B02327"}
-                w="143px"
-                h="28px"
+                w="88px"
+                h="20px"
                 color="#D1CEDB"
-                fontSize="14px"
+                fontSize="10px"
                 fontStyle="normal"
                 fontWeight="400"
                 lineHeight="24px"
+                margin="1rem"
               >
                 Recommended
               </Flex>
@@ -1311,46 +1318,46 @@ export default function Product() {
               <Image src={Review}></Image>
               <Flex
                 color="var(--grey-900, #28233C)"
-                fontSize="25px"
+                fontSize="14px"
                 fontStyle="normal"
                 fontWeight="800"
                 lineHeight="28px"
               >
-                Materials Supplies
+                Workshop and Seminar
               </Flex>
               <Flex
                 color="#000"
-                fontSize="20px"
+                fontSize="10px"
                 fontStyle="normal"
                 fontWeight="400"
                 lineHeight="28px"
-                width="839px"
+                width="290px"
               >
-                Dalam layanan ini, kami akan menyediakan beragam jenis bahan,
-                komponen, dan peralatan relevan dengan bidang kreatif yang
-                sedang kamu tekuni. Layanan ini menjadi solusi lengkap untuk
-                memenuhi kebutuhan material yang diperlukan dalam pembuatan
-                produk.
+                Layanan workshop dan sesi seminar informatif dirancang untuk
+                memberikan manfaat nyata melalui kesempatan untuk belajar secara
+                langsung, berkolaborasi dengan sesama peserta, dan mendapatkan
+                pengalaman praktis mencakup berbagai topik untuk menciptakan
+                lokakarya kreatif bersama ahli di bidangnya.
               </Flex>
               <Button
                 display="flex"
-                padding="18px 32px"
+                padding="18px 10px"
                 alignItems="center"
                 gap="10px"
+                color="white"
                 borderRadius="12px"
                 background="#1C2C5A"
-                w="158px"
-                h="64px"
+                w="106px"
+                h="46px"
                 _hover={{
                   bgColor: "#F0D411",
                   color: "black",
                 }}
               >
-                <Image src={Cart}></Image>
+                <Image src={Cart} w="24px" h="24px"></Image>
                 <Flex
-                  color="#FFF"
                   textAlign="right"
-                  fontSize="18px"
+                  fontSize="12px"
                   fontStyle="normal"
                   fontWeight="700"
                   lineHeight="28px"
@@ -1364,12 +1371,12 @@ export default function Product() {
           </Flex>
           <Flex
             display="flex"
-            width="1440px"
-            padding="0px 120px"
+            width="320px"
             alignItems="flex-start"
-            gap="50px"
+            flexDir={"column"}
+            gap="19px"
           >
-            <Flex width="313px" height="322px" flex-shrink="0" bgImage={P5}>
+            <Flex width="256px" height="276px" flex-shrink="0" bgImage={P1}>
               <Flex
                 display="flex"
                 padding="2px 19px"
@@ -1377,13 +1384,14 @@ export default function Product() {
                 alignItems="center"
                 gap="10px"
                 background={"#B02327"}
-                w="143px"
-                h="28px"
+                w="88px"
+                h="20px"
                 color="#D1CEDB"
-                fontSize="14px"
+                fontSize="10px"
                 fontStyle="normal"
                 fontWeight="400"
                 lineHeight="24px"
+                margin="1rem"
               >
                 Recommended
               </Flex>
@@ -1398,56 +1406,55 @@ export default function Product() {
               <Image src={Review}></Image>
               <Flex
                 color="var(--grey-900, #28233C)"
-                fontSize="25px"
+                fontSize="14px"
                 fontStyle="normal"
                 fontWeight="800"
                 lineHeight="28px"
               >
-                Material Library
+                Workshop and Seminar
               </Flex>
               <Flex
                 color="#000"
-                fontSize="20px"
+                fontSize="10px"
                 fontStyle="normal"
                 fontWeight="400"
                 lineHeight="28px"
-                width="839px"
+                width="290px"
               >
-                dalam proses pengembangan
+                Layanan workshop dan sesi seminar informatif dirancang untuk
+                memberikan manfaat nyata melalui kesempatan untuk belajar secara
+                langsung, berkolaborasi dengan sesama peserta, dan mendapatkan
+                pengalaman praktis mencakup berbagai topik untuk menciptakan
+                lokakarya kreatif bersama ahli di bidangnya.
               </Flex>
-              <Link
-                to="https://api.whatsapp.com/send/?phone=6287855476158&text&type=phone_number&app_absent=0"
-                as={ReachLink}
+              <Button
+                display="flex"
+                padding="18px 10px"
+                alignItems="center"
+                gap="10px"
+                color="white"
+                borderRadius="12px"
+                background="#1C2C5A"
+                w="106px"
+                h="46px"
+                _hover={{
+                  bgColor: "#F0D411",
+                  color: "black",
+                }}
               >
+                <Image src={Cart} w="24px" h="24px"></Image>
                 <Flex
-                  display="flex"
-                  padding="18px 32px"
-                  alignItems="center"
-                  gap="10px"
-                  borderRadius="12px"
-                  background="#1C2C5A"
-                  w="158px"
-                  h="64px"
-                  _hover={{
-                    bgColor: "#F0D411",
-                    color: "black",
-                  }}
+                  textAlign="right"
+                  fontSize="12px"
+                  fontStyle="normal"
+                  fontWeight="700"
+                  lineHeight="28px"
+                  textTransform="capitalize"
                 >
-                  <Image src={Cart}></Image>
-                  <Flex
-                    color="#FFF"
-                    textAlign="right"
-                    fontSize="18px"
-                    fontStyle="normal"
-                    fontWeight="700"
-                    lineHeight="28px"
-                    textTransform="capitalize"
-                  >
-                    {" "}
-                    Join Us
-                  </Flex>{" "}
-                </Flex>
-              </Link>
+                  {" "}
+                  Join Us
+                </Flex>{" "}
+              </Button>
             </Flex>
           </Flex>
         </Flex>

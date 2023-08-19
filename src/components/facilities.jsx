@@ -22,6 +22,7 @@ import IG from "../assets/IG.png";
 import FB from "../assets/FB.png";
 import HERO from "../assets/HERO.png";
 import F1 from "../assets/F1.jpg";
+import KF1 from "../assets/KF1.png";
 import F2 from "../assets/F2.jpg";
 import F3 from "../assets/F3.jpg";
 import F4 from "../assets/F4.jpg";
@@ -798,7 +799,7 @@ export default function Facilities() {
             <Flex
               color="#807D8A"
               textAlign="center"
-              fontSize="16px"
+              fontSize="12px"
               font-style="normal"
               fontWeight="600"
               line-height="26px"
@@ -807,11 +808,12 @@ export default function Facilities() {
             </Flex>
             <Flex
               color="#1C2C5A"
+              w="280px"
               textAlign="center"
-              fontSize="25px"
+              fontSize="10px"
               font-style="normal"
               fontWeight="600"
-              line-height="70px"
+              line-height="25px"
             >
               Kami menyediakan berbagai fasilitas yang bisa menunjang
               kreativitasmu{" "}
@@ -822,14 +824,15 @@ export default function Facilities() {
             display="flex"
             flexDirection="column"
             alignItems="center"
-            gap="101px"
+            gap="50px"
           >
             <Flex
               display="flex"
-              width="1314px"
+              width="300px"
               justifyContent="center"
+              flexDirection="column"
               alignItems="center"
-              gap="180px"
+              gap="50px"
             >
               <Flex
                 display="flex"
@@ -989,10 +992,11 @@ export default function Facilities() {
             </Flex>
             <Flex
               display="flex"
-              width="1314px"
+              width="280px"
               justifyContent="center"
+              flexDirection="column"
               alignItems="center"
-              gap="180px"
+              gap="50px"
             >
               <Flex
                 display="flex"

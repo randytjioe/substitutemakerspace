@@ -243,7 +243,12 @@ export default function AboutMe() {
               alignItems="center"
               gap="30px"
             >
-              <Flex display="flex" width="100%" flexDirection="column">
+              <Flex
+                display="flex"
+                width="100%"
+                flexDirection="column"
+                gap="15px"
+              >
                 <Flex
                   color="#1C2C5A"
                   fontSize="14px"

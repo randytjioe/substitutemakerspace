@@ -4,8 +4,10 @@ import {
   Flex,
   Image,
   Text,
+  Link,
   useMediaQuery,
 } from "@chakra-ui/react";
+import { Link as ReachLink } from "react-router-dom";
 import logo from "../assets/logo.png";
 import WA from "../assets/WA P.png";
 import YTB from "../assets/YTB.png";
@@ -62,33 +64,37 @@ export default function Hero() {
               >
                 Berdiri sejak 2019
               </Flex>
-
-              <Button
-                display="flex"
-                padding="18px 32px"
-                alignItems="center"
-                gap="10px"
-                w={["158px"]}
-                h={["64px"]}
-                borderRadius="12px"
-                background="#1C2C5A"
-                fontSize={["18px"]}
-                color={"white"}
-                _hover={{
-                  bgColor: "#F0D411",
-                  color: "black",
-                }}
+              <Link
+                to="https://api.whatsapp.com/send/?phone=6287855476158&text=Hallo,%20Saya%20mau%20mendaftar,%20Gimana%20caranya?&type=phone_number&app_absent=0"
+                as={ReachLink}
               >
-                <Image
-                  src={WA}
-                  w={["21px"]}
-                  h={["21px"]}
+                <Button
+                  display="flex"
+                  padding="18px 32px"
+                  alignItems="center"
+                  gap="10px"
+                  w={["158px"]}
+                  h={["64px"]}
+                  borderRadius="12px"
+                  background="#1C2C5A"
+                  fontSize={["18px"]}
+                  color={"white"}
                   _hover={{
+                    bgColor: "#F0D411",
                     color: "black",
                   }}
-                ></Image>
-                Ask Me
-              </Button>
+                >
+                  <Image
+                    src={WA}
+                    w={["21px"]}
+                    h={["21px"]}
+                    _hover={{
+                      color: "black",
+                    }}
+                  ></Image>
+                  Ask Me
+                </Button>
+              </Link>
             </Center>
           </Center>
         </Flex>
@@ -135,33 +141,37 @@ export default function Hero() {
               >
                 Berdiri sejak 2019
               </Flex>
-
-              <Button
-                display="flex"
-                padding="18px 32px"
-                alignItems="center"
-                gap="10px"
-                w={["107px"]}
-                h={["40px"]}
-                borderRadius="12px"
-                background="#1C2C5A"
-                fontSize={["12px"]}
-                color={"white"}
-                _hover={{
-                  bgColor: "#F0D411",
-                  color: "black",
-                }}
+              <Link
+                to="https://api.whatsapp.com/send/?phone=6287855476158&text=Hallo,%20Saya%20mau%20mendaftar,%20Gimana%20caranya?&type=phone_number&app_absent=0"
+                as={ReachLink}
               >
-                <Image
-                  src={WA}
-                  w={["18px"]}
-                  h={["18px"]}
+                <Button
+                  display="flex"
+                  padding="18px 32px"
+                  alignItems="center"
+                  gap="10px"
+                  w={["107px"]}
+                  h={["40px"]}
+                  borderRadius="12px"
+                  background="#1C2C5A"
+                  fontSize={["12px"]}
+                  color={"white"}
                   _hover={{
+                    bgColor: "#F0D411",
                     color: "black",
                   }}
-                ></Image>
-                Ask Me
-              </Button>
+                >
+                  <Image
+                    src={WA}
+                    w={["18px"]}
+                    h={["18px"]}
+                    _hover={{
+                      color: "black",
+                    }}
+                  ></Image>
+                  Ask Me
+                </Button>
+              </Link>
             </Center>
           </Center>
         </Flex>
@@ -199,32 +209,36 @@ export default function Hero() {
               <Flex fontSize="10px" fontStyle="normal" lineHeight="28px">
                 Berdiri sejak 2019
               </Flex>
-
-              <Flex
-                display="flex"
-                alignItems="center"
-                justifyContent={"center"}
-                gap="10px"
-                w="47px"
-                h="17px"
-                borderRadius="5px"
-                background="#1C2C5A"
-                color={"white"}
-                _hover={{
-                  bgColor: "#F0D411",
-                  color: "black",
-                }}
+              <Link
+                to="https://api.whatsapp.com/send/?phone=6287855476158&text=Hallo,%20Saya%20mau%20mendaftar,%20Gimana%20caranya?&type=phone_number&app_absent=0"
+                as={ReachLink}
               >
-                <Image
-                  src={WA}
-                  w="8px"
-                  h="8px"
+                <Button
+                  display="flex"
+                  alignItems="center"
+                  justifyContent={"center"}
+                  gap="10px"
+                  w="47px"
+                  h="17px"
+                  borderRadius="5px"
+                  background="#1C2C5A"
+                  color={"white"}
                   _hover={{
+                    bgColor: "#F0D411",
                     color: "black",
                   }}
-                ></Image>
-                <Flex fontSize={"6px"}>Ask Me</Flex>
-              </Flex>
+                >
+                  <Image
+                    src={WA}
+                    w="8px"
+                    h="8px"
+                    _hover={{
+                      color: "black",
+                    }}
+                  ></Image>
+                  <Flex fontSize={"6px"}>Ask Me</Flex>
+                </Button>
+              </Link>
             </Flex>
           </Center>
         </Flex>

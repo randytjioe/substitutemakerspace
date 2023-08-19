@@ -338,9 +338,10 @@ export default function Navbar() {
         </Center>
       ) : kecil ? (
         <Flex
+          className={`navbar ${stickyClass}`}
           w="100%"
           h="47px"
-          p={["20px 10px"]}
+          p={"20px 10px"}
           alignItems="center"
           justifyContent="center"
           display="flex"
@@ -348,202 +349,107 @@ export default function Navbar() {
           fontFamily={"Plus Jakarta Sans"}
           zIndex={30}
           bgColor={"white"}
-          className={`navbar ${stickyClass}`}
         >
           <Flex
             w="100%"
-            p={["0px 10px"]}
+            p={"0px 10px"}
             alignItems="center"
-            justifyContent="space-between"
             display="flex"
             flex-shrink="0"
             fontFamily={"Plus Jakarta Sans"}
             zIndex={30}
+            gap="10px"
             bgColor={"white"}
           >
-            <Image src={logo} w={["97px"]} h={["27px"]}></Image>
-            <Menu>
-              <MenuButton
-                as={AiOutlineMenu}
-                aria-label="Options"
-                variant="outline"
-              />
-              <MenuList>
-                <MenuItem>
-                  <Flex
-                    color="#38466F"
-                    fontStyle="normal"
-                    fontWeight="500"
-                    lineHeight="24px"
-                    _hover={{
-                      color: "#1C2C5A",
-                      borderBottom: "3px solid #1C2C5A",
-                    }}
-                  >
-                    <HashLink smooth to="/#aboutme">
-                      About Me
-                    </HashLink>
-                  </Flex>
-                </MenuItem>
-                <MenuItem>
-                  {" "}
-                  <Flex
-                    color="#38466F"
-                    fontStyle="normal"
-                    fontWeight="500"
-                    lineHeight="24px"
-                    _hover={{
-                      color: "#1C2C5A",
-                      borderBottom: "3px solid #1C2C5A",
-                    }}
-                  >
-                    <HashLink smooth to="/#products">
-                      Product & Services
-                    </HashLink>
-                  </Flex>
-                </MenuItem>
-                <MenuItem>
-                  {" "}
-                  <Flex
-                    color="#38466F"
-                    fontStyle="normal"
-                    fontWeight="500"
-                    lineHeight="24px"
-                    _hover={{
-                      color: "#1C2C5A",
-                      borderBottom: "3px solid #1C2C5A",
-                    }}
-                  >
-                    {" "}
-                    <HashLink smooth to="/#facilities">
-                      Facilities
-                    </HashLink>
-                  </Flex>
-                </MenuItem>
-                <MenuItem>
-                  {" "}
-                  <Flex
-                    color="#38466F"
-                    fontStyle="normal"
-                    fontWeight="500"
-                    lineHeight="24px"
-                    _hover={{
-                      color: "#1C2C5A",
-                      borderBottom: "3px solid #1C2C5A",
-                    }}
-                  >
-                    <HashLink smooth to="/#faq">
-                      FAQ
-                    </HashLink>
-                  </Flex>
-                </MenuItem>
-                <MenuItem>
-                  {" "}
-                  <Flex
-                    color="#38466F"
-                    fontStyle="normal"
-                    fontWeight="500"
-                    lineHeight="24px"
-                    _hover={{
-                      color: "#1C2C5A",
-                      borderBottom: "3px solid #1C2C5A",
-                    }}
-                  >
-                    <HashLink smooth to="/#documentation">
-                      Documentation
-                    </HashLink>
-                  </Flex>
-                </MenuItem>
-              </MenuList>
-            </Menu>
-          </Flex>
-          {/* <Center
-            display="flex"
-            justifyContent="center"
-            alignItems="center"
-            flex="1 0 0"
-            fontSize={["6px"]}
-            p={["0px 10px"]}
-            gap={["20px"]}
-          >
-            <Flex
-              color="#38466F"
-              fontFamily="Plus Jakarta Sans"
-              fontStyle="normal"
-              fontWeight="500"
-              lineHeight="24px"
-              bgColor={"white"}
-              _hover={{
-                color: "#1C2C5A",
-                borderBottom: "3px solid #1C2C5A",
-              }}
-            >
-              <HashLink smooth to="/#aboutme">
-                About Me
-              </HashLink>
-            </Flex>
+            <Image src={logo} w={"82px"} h={"19px"}></Image>
 
-            <Flex
-              color="#38466F"
-              fontStyle="normal"
-              fontWeight="500"
-              lineHeight="24px"
-              bgColor={"white"}
-              _hover={{
-                color: "#1C2C5A",
-                borderBottom: "3px solid #1C2C5A",
-              }}
+            <Center
+              display="flex"
+              justifyContent="space-between"
+              alignItems="center"
+              flex="1 0 0"
+              fontSize={"5px"}
+              p={"0px 5px"}
             >
-              <HashLink smooth to="/#products">
-                Product & Services
-              </HashLink>
-            </Flex>
-            <Flex
-              color="#38466F"
-              fontStyle="normal"
-              fontWeight="500"
-              lineHeight="24px"
-              bgColor={"white"}
-              _hover={{
-                color: "#1C2C5A",
-                borderBottom: "3px solid #1C2C5A",
-              }}
-            >
-              <HashLink smooth to="/#facilities">
-                Facilities
-              </HashLink>
-            </Flex>
-            <Flex
-              color="#38466F"
-              fontStyle="normal"
-              fontWeight="500"
-              lineHeight="24px"
-              bgColor={"white"}
-              _hover={{
-                color: "#1C2C5A",
-                borderBottom: "3px solid #1C2C5A",
-              }}
-            >
-              <HashLink smooth to="/#faq">
-                FAQ
-              </HashLink>
-            </Flex>
-            <Flex
-              color="#38466F"
-              fontStyle="normal"
-              fontWeight="500"
-              lineHeight="24px"
-              bgColor={"white"}
-              _hover={{
-                color: "#1C2C5A",
-                borderBottom: "3px solid #1C2C5A",
-              }}
-            >
-              <HashLink smooth to="/#documentation">
-                Documentation
-              </HashLink>
-            </Flex>
-          </Center> */}
+              <Flex
+                color="#38466F"
+                fontFamily="Plus Jakarta Sans"
+                fontStyle="normal"
+                fontWeight="500"
+                lineHeight="10px"
+                bgColor={"white"}
+                _hover={{
+                  color: "#1C2C5A",
+                  borderBottom: "3px solid #1C2C5A",
+                }}
+              >
+                <HashLink smooth to="/#aboutme">
+                  About Me
+                </HashLink>
+              </Flex>
+
+              <Flex
+                color="#38466F"
+                fontStyle="normal"
+                fontWeight="500"
+                lineHeight="10px"
+                bgColor={"white"}
+                _hover={{
+                  color: "#1C2C5A",
+                  borderBottom: "3px solid #1C2C5A",
+                }}
+              >
+                <HashLink smooth to="/#products">
+                  Product & Services
+                </HashLink>
+              </Flex>
+              <Flex
+                color="#38466F"
+                fontStyle="normal"
+                fontWeight="500"
+                lineHeight="24px"
+                bgColor={"white"}
+                _hover={{
+                  color: "#1C2C5A",
+                  borderBottom: "3px solid #1C2C5A",
+                }}
+              >
+                <HashLink smooth to="/#facilities">
+                  Facilities
+                </HashLink>
+              </Flex>
+              <Flex
+                color="#38466F"
+                fontStyle="normal"
+                fontWeight="500"
+                lineHeight="10px"
+                bgColor={"white"}
+                _hover={{
+                  color: "#1C2C5A",
+                  borderBottom: "3px solid #1C2C5A",
+                }}
+              >
+                <HashLink smooth to="/#faq">
+                  FAQ
+                </HashLink>
+              </Flex>
+              <Flex
+                color="#38466F"
+                fontStyle="normal"
+                fontWeight="500"
+                lineHeight="10px"
+                bgColor={"white"}
+                _hover={{
+                  color: "#1C2C5A",
+                  borderBottom: "3px solid #1C2C5A",
+                }}
+              >
+                <HashLink smooth to="/#documentation">
+                  Documentation
+                </HashLink>
+              </Flex>
+            </Center>
+          </Flex>
           {/* <Flex
               display={["none", "flex", "flex"]}
               justifyContent="center"

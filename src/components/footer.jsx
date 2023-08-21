@@ -363,7 +363,7 @@ export default function Footer() {
                 fontWeight="400"
                 lineHeight="28px"
               >
-                {" "}
+              
                 is to become a creative space where arts, culture, business, and
                 technology converge to inspire and encourage new forms of
                 innovation to spur the creative economy

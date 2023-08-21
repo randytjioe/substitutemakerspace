@@ -15,14 +15,14 @@ import {
 } from "@chakra-ui/react";
 import { Link as ReachLink } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
+import { AiOutlineMenu } from "react-icons/ai";
+import React, { useState, useEffect } from "react";
 import logo from "../assets/logo.png";
 import WA from "../assets/WA.png";
 import YTB from "../assets/YTB.png";
 import IG from "../assets/IG.png";
 import FB from "../assets/FB.png";
-import { AiOutlineMenu } from "react-icons/ai";
-import React, { useState, useEffect } from "react";
-import Product from "./productServices";
+
 export default function Navbar() {
   const [kecil] = useMediaQuery("(min-width: 320px)");
   const [medium] = useMediaQuery("(min-width: 767px)");
@@ -47,32 +47,28 @@ export default function Navbar() {
         <Center
           className={`navbar ${stickyClass}`}
           w="100%"
-          p={["20px 10px", "20px 25px", "0px 60px"]}
+          p={"0px 60px"}
           alignItems="center"
-          justifyContent={["center", "center", "space-between"]}
+          justifyContent={"space-between"}
           display="flex"
           fontFamily={"Plus Jakarta Sans"}
           zIndex={30}
           bgColor={"white"}
         >
-          <Image
-            src={logo}
-            w={["61px", "181px", "273px"]}
-            h={["17px", "49px", "74px"]}
-          ></Image>
+          <Image src={logo} w={"273px"} h={"74px"}></Image>
 
           <Center
             display="flex"
             justifyContent="center"
             alignItems="center"
             flex="1 0 0"
-            p={["0px 10px", "0px 5px", "0px 60px"]}
-            gap={["20px", "20px", "36px"]}
+            p={"0px 60px"}
+            gap={"36px"}
           >
             <Flex
               color="#38466F"
               fontFamily="Plus Jakarta Sans"
-              fontSize={["8px", "10px", "15px"]}
+              fontSize={"15px"}
               fontStyle="normal"
               fontWeight="500"
               lineHeight="24px"
@@ -82,7 +78,7 @@ export default function Navbar() {
                 borderBottom: "3px solid #1C2C5A",
               }}
             >
-              <HashLink smooth to="/#aboutme">
+              <HashLink smooth to="/#aboutme" exact activeClassName="is-active">
                 About Me
               </HashLink>
             </Flex>
@@ -90,7 +86,7 @@ export default function Navbar() {
             <Flex
               color="#38466F"
               fontFamily="Plus Jakarta Sans"
-              fontSize={["8px", "10px", "15px"]}
+              fontSize={"15px"}
               fontStyle="normal"
               fontWeight="500"
               lineHeight="24px"
@@ -100,14 +96,19 @@ export default function Navbar() {
                 borderBottom: "3px solid #1C2C5A",
               }}
             >
-              <HashLink smooth to="/#products">
+              <HashLink
+                smooth
+                to="/#products"
+                exact
+                activeClassName="is-active"
+              >
                 Product & Services
               </HashLink>
             </Flex>
             <Flex
               color="#38466F"
               fontFamily="Plus Jakarta Sans"
-              fontSize={["8px", "10px", "15px"]}
+              fontSize={"15px"}
               fontStyle="normal"
               fontWeight="500"
               lineHeight="24px"
@@ -117,14 +118,19 @@ export default function Navbar() {
                 borderBottom: "3px solid #1C2C5A",
               }}
             >
-              <HashLink smooth to="/#facilities">
+              <HashLink
+                smooth
+                to="/#facilities"
+                exact
+                activeClassName="is-active"
+              >
                 Facilities
               </HashLink>
             </Flex>
             <Flex
               color="#38466F"
               fontFamily="Plus Jakarta Sans"
-              fontSize={["8px", "10px", "15px"]}
+              fontSize={"15px"}
               fontStyle="normal"
               fontWeight="500"
               lineHeight="24px"
@@ -134,14 +140,14 @@ export default function Navbar() {
                 borderBottom: "3px solid #1C2C5A",
               }}
             >
-              <HashLink smooth to="/#faq">
+              <HashLink smooth to="/#faq" exact activeClassName="is-active">
                 FAQ
               </HashLink>
             </Flex>
             <Flex
               color="#38466F"
               fontFamily="Plus Jakarta Sans"
-              fontSize={["8px", "10px", "15px"]}
+              fontSize={"15px"}
               fontStyle="normal"
               fontWeight="500"
               lineHeight="24px"
@@ -151,64 +157,53 @@ export default function Navbar() {
                 borderBottom: "3px solid #1C2C5A",
               }}
             >
-              <HashLink smooth to="/#documentation">
+              <HashLink
+                smooth
+                to="/#documentation"
+                exact
+                activeClassName="is-active"
+              >
                 Documentation
               </HashLink>
             </Flex>
           </Center>
           <Flex
-            display={["none", "flex", "flex"]}
+            display={"flex"}
             justifyContent="center"
             alignItems="center"
-            gap={["0px", "15px", "36px"]}
+            gap={"36px"}
           >
             <Link
               to="https://api.whatsapp.com/send/?phone=6287855476158&text&type=phone_number&app_absent=0"
               as={ReachLink}
             >
-              <Image
-                src={WA}
-                w={["0px", "12px", "24px"]}
-                h={["0px", "12px", "24px"]}
-              />
+              <Image src={WA} w={"24px"} h="24px" />
             </Link>
             <Link
               to="https://www.instagram.com/substitute.makerspace/?hl=en"
               as={ReachLink}
             >
-              <Image
-                src={IG}
-                w={["0px", "12px", "24px"]}
-                h={["0px", "12px", "24px"]}
-              />
+              <Image src={IG} w={"24px"} h={"24px"} />
             </Link>
             <Link
               to="https://www.facebook.com/substitutemakerspace.sub/"
               as={ReachLink}
             >
-              <Image
-                src={FB}
-                w={["0px", "12px", "24px"]}
-                h={["0px", "12px", "24px"]}
-              />
+              <Image src={FB} w={"24px"} h={"24px"} />
             </Link>
             <Link
               to="https://www.youtube.com/channel/UCIIUT6oYIe9rVNJScXi83NA"
               as={ReachLink}
             >
-              <Image
-                src={YTB}
-                w={["0px", "12px", "24px"]}
-                h={["0px", "12px", "24px"]}
-              />
+              <Image src={YTB} w={"24px"} h={"24px"} />
             </Link>
           </Flex>
         </Center>
       ) : medium ? (
         <Center
           className={`navbar ${stickyClass}`}
-          mW="767px"
-          p={["20px 25px"]}
+          w="100%"
+          p={"20px 25px"}
           alignItems="center"
           justifyContent={"center"}
           display="flex"
@@ -238,7 +233,7 @@ export default function Navbar() {
                 borderBottom: "3px solid #1C2C5A",
               }}
             >
-              <HashLink smooth to="/#aboutme">
+              <HashLink smooth to="/#aboutme" exact activeClassName="is-active">
                 About Me
               </HashLink>
             </Flex>
@@ -254,7 +249,12 @@ export default function Navbar() {
                 borderBottom: "3px solid #1C2C5A",
               }}
             >
-              <HashLink smooth to="/#products">
+              <HashLink
+                smooth
+                to="/#products"
+                exact
+                activeClassName="is-active"
+              >
                 Product & Services
               </HashLink>
             </Flex>
@@ -269,7 +269,12 @@ export default function Navbar() {
                 borderBottom: "3px solid #1C2C5A",
               }}
             >
-              <HashLink smooth to="/#facilities">
+              <HashLink
+                smooth
+                to="/#facilities"
+                exact
+                activeClassName="is-active"
+              >
                 Facilities
               </HashLink>
             </Flex>
@@ -284,7 +289,7 @@ export default function Navbar() {
                 borderBottom: "3px solid #1C2C5A",
               }}
             >
-              <HashLink smooth to="/#faq">
+              <HashLink smooth to="/#faq" exact activeClassName="is-active">
                 FAQ
               </HashLink>
             </Flex>
@@ -299,7 +304,12 @@ export default function Navbar() {
                 borderBottom: "3px solid #1C2C5A",
               }}
             >
-              <HashLink smooth to="/#documentation">
+              <HashLink
+                smooth
+                to="/#documentation"
+                exact
+                activeClassName="is-active"
+              >
                 Documentation
               </HashLink>
             </Flex>
@@ -383,7 +393,12 @@ export default function Navbar() {
                   borderBottom: "3px solid #1C2C5A",
                 }}
               >
-                <HashLink smooth to="/#aboutme">
+                <HashLink
+                  smooth
+                  to="/#aboutme"
+                  exact
+                  activeClassName="is-active"
+                >
                   About Me
                 </HashLink>
               </Flex>
@@ -399,7 +414,12 @@ export default function Navbar() {
                   borderBottom: "3px solid #1C2C5A",
                 }}
               >
-                <HashLink smooth to="/#products">
+                <HashLink
+                  smooth
+                  to="/#products"
+                  exact
+                  activeClassName="is-active"
+                >
                   Product & Services
                 </HashLink>
               </Flex>
@@ -414,7 +434,12 @@ export default function Navbar() {
                   borderBottom: "3px solid #1C2C5A",
                 }}
               >
-                <HashLink smooth to="/#facilities">
+                <HashLink
+                  smooth
+                  to="/#facilities"
+                  exact
+                  activeClassName="is-active"
+                >
                   Facilities
                 </HashLink>
               </Flex>
@@ -429,7 +454,7 @@ export default function Navbar() {
                   borderBottom: "3px solid #1C2C5A",
                 }}
               >
-                <HashLink smooth to="/#faq">
+                <HashLink smooth to="/#faq" exact activeClassName="is-active">
                   FAQ
                 </HashLink>
               </Flex>
@@ -444,59 +469,17 @@ export default function Navbar() {
                   borderBottom: "3px solid #1C2C5A",
                 }}
               >
-                <HashLink smooth to="/#documentation">
+                <HashLink
+                  smooth
+                  to="/#documentation"
+                  exact
+                  activeClassName="is-active"
+                >
                   Documentation
                 </HashLink>
               </Flex>
             </Center>
           </Flex>
-          {/* <Flex
-              display={["none", "flex", "flex"]}
-              justifyContent="center"
-              alignItems="center"
-              gap={["0px", "15px", "36px"]}
-            >
-              <Link
-                to="https://api.whatsapp.com/send/?phone=6287855476158&text&type=phone_number&app_absent=0"
-                as={ReachLink}
-              >
-                <Image
-                  src={WA}
-                  w={["0px", "12px", "24px"]}
-                  h={["0px", "12px", "24px"]}
-                />
-              </Link>
-              <Link
-                to="https://www.instagram.com/substitute.makerspace/?hl=en"
-                as={ReachLink}
-              >
-                <Image
-                  src={IG}
-                  w={["0px", "12px", "24px"]}
-                  h={["0px", "12px", "24px"]}
-                />
-              </Link>
-              <Link
-                to="https://www.facebook.com/substitutemakerspace.sub/"
-                as={ReachLink}
-              >
-                <Image
-                  src={FB}
-                  w={["0px", "12px", "24px"]}
-                  h={["0px", "12px", "24px"]}
-                />
-              </Link>
-              <Link
-                to="https://www.youtube.com/channel/UCIIUT6oYIe9rVNJScXi83NA"
-                as={ReachLink}
-              >
-                <Image
-                  src={YTB}
-                  w={["0px", "12px", "24px"]}
-                  h={["0px", "12px", "24px"]}
-                />
-              </Link>
-            </Flex> */}
         </Flex>
       ) : null}
     </>

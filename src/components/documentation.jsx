@@ -19,14 +19,16 @@ import YTB from "../assets/YTB.png";
 import IG from "../assets/IG.png";
 import FB from "../assets/FB.png";
 import HERO from "../assets/HERO.png";
-import D1 from "../assets/D1.jpg";
+import D1 from "../assets/D1.JPG";
 import D2 from "../assets/D2.jpg";
 import D3 from "../assets/D3.jpg";
 import D4 from "../assets/D4.jpg";
 import D5 from "../assets/D5.jpg";
-import D6 from "../assets/D6.jpg";
+
 import D7 from "../assets/D7.jpg";
 import D8 from "../assets/D8.jpg";
+import D9 from "../assets/D9.JPG";
+import D10 from "../assets/D10.JPG";
 import React from "react";
 
 import Slider from "react-slick";
@@ -56,11 +58,16 @@ export default function Documentation() {
   const data = [
     {
       image: [D1],
-      caption: ["sadadasdasd"],
+      caption: ["Zero Waste Fashion w/ Aryani Widagdo Creativity Nest 2019"],
     },
-    { image: [D2], caption: ["dsasdasdasdasd"] },
-    { image: [D3], caption: ["dasdasdasdasd"] },
-    { image: [D4], caption: ["asdasdasdasd"] },
+    { image: [D9], caption: ["Creative Hub Academy 2019"] },
+    {
+      image: [D10],
+      caption: [
+        "Pelatihan Menjahit Popok Bayi bersama Muslimat NU - Fatayat 2021",
+      ],
+    },
+    { image: [D2], caption: ["BOSCH Launching Product"] },
   ];
   return (
     <>
@@ -75,12 +82,12 @@ export default function Documentation() {
           id="documentation"
         >
           <Flex
-            color="#1C2C5A"
+            color="#807D8A"
             textAlign="center"
-            fontSize="60px"
+            fontSize="16px"
             fontStyle="normal"
             fontWeight="600"
-            lineHeight="70px"
+            lineHeight="26px"
           >
             Documentation
           </Flex>
@@ -132,64 +139,36 @@ export default function Documentation() {
               >
                 <BiRightArrowAlt />
               </IconButton>
-              {/* Slider */}
+
               <Slider {...settings} ref={(slider) => setSlider(slider)}>
-                {/* {data?.map((product, index) => (
-                <>
-                  <Flex flexDir={"column"}>
-                    <Box
-                      key={index}
-                      position="relative"
-                      backgroundPosition="center"
-                      backgroundRepeat="no-repeat"
-                      backgroundSize="cover"
-                      backgroundImage={product.image}
-                      height={"524px"}
-                      width={"1321px"}
-                    />
-                    <Center padding={"10px"} color="black" fontSize={"50px"}>
-                      {product.caption}
-                    </Center>
-                  </Flex>
-                </>
-              ))} */}
                 {data.map((card, index) => (
                   <Box
                     key={index}
-                    height={"6xl"}
                     position="relative"
                     backgroundPosition="center"
                     backgroundRepeat="no-repeat"
                     backgroundSize="cover"
+                    height={"524px"}
+                    width={"1321px"}
                     backgroundImage={`url(${card.image})`}
                   >
-                    {/* This is the block you need to change, to customize the caption */}
-                    <Container
-                      size="container.lg"
-                      height="600px"
-                      position="relative"
+                    <Center
+                      display="flex"
+                      height={"524px"}
+                      width={"1321px"}
+                      alignItems="flex-end"
+                      py="50px"
                     >
-                      <Stack
-                        spacing={6}
-                        w={"full"}
-                        maxW={"lg"}
-                        position="absolute"
-                        top="50%"
-                        transform="translate(0, -50%)"
+                      <Heading
+                        fontSize={"24px"}
+                        color="#1C2C5A"
+                        backgroundColor={"white"}
+                        px="10px"
+                        py="5px"
                       >
-                        <Heading
-                          fontSize={{ base: "3xl", md: "4xl", lg: "5xl" }}
-                        >
-                          {card.caption}
-                        </Heading>
-                        {/* <Text
-                        fontSize={{ base: "md", lg: "lg" }}
-                        color="GrayText"
-                      >
-                        {card.text}
-                      </Text> */}
-                      </Stack>
-                    </Container>
+                        {card.caption}
+                      </Heading>
+                    </Center>
                   </Box>
                 ))}
               </Slider>
@@ -260,25 +239,6 @@ export default function Documentation() {
               </IconButton>
               {/* Slider */}
               <Slider {...settings} ref={(slider) => setSlider(slider)}>
-                {/* {data?.map((product, index) => (
-                <>
-                  <Flex flexDir={"column"}>
-                    <Box
-                      key={index}
-                      position="relative"
-                      backgroundPosition="center"
-                      backgroundRepeat="no-repeat"
-                      backgroundSize="cover"
-                      backgroundImage={product.image}
-                      height={"524px"}
-                      width={"1321px"}
-                    />
-                    <Center padding={"10px"} color="black" fontSize={"50px"}>
-                      {product.caption}
-                    </Center>
-                  </Flex>
-                </>
-              ))} */}
                 {data.map((card, index) => (
                   <Box
                     key={index}
@@ -291,32 +251,23 @@ export default function Documentation() {
                     backgroundImage={`url(${card.image})`}
                   >
                     {/* This is the block you need to change, to customize the caption */}
-                    <Container
-                      size="container.lg"
-                      height="600px"
-                      position="relative"
+                    <Center
+                      display="flex"
+                      w="655px"
+                      h="335px"
+                      alignItems="flex-end"
+                      py="50px"
                     >
-                      <Stack
-                        spacing={6}
-                        w={"full"}
-                        maxW={"lg"}
-                        position="absolute"
-                        top="50%"
-                        transform="translate(0, -50%)"
+                      <Heading
+                        fontSize={"14px"}
+                        color="#1C2C5A"
+                        backgroundColor={"white"}
+                        px="10px"
+                        py="5px"
                       >
-                        <Heading
-                          fontSize={{ base: "3xl", md: "4xl", lg: "5xl" }}
-                        >
-                          {card.caption}
-                        </Heading>
-                        {/* <Text
-                        fontSize={{ base: "md", lg: "lg" }}
-                        color="GrayText"
-                      >
-                        {card.text}
-                      </Text> */}
-                      </Stack>
-                    </Container>
+                        {card.caption}
+                      </Heading>
+                    </Center>
                   </Box>
                 ))}
               </Slider>
@@ -374,7 +325,7 @@ export default function Documentation() {
                 zIndex={2}
                 onClick={() => slider?.slickPrev()}
               >
-                <BiLeftArrowAlt />
+                <BiLeftArrowAlt w="5px" h="5px" />
               </IconButton>
               {/* Right Icon */}
               <IconButton
@@ -404,32 +355,23 @@ export default function Documentation() {
                     backgroundImage={`url(${card.image})`}
                   >
                     {/* This is the block you need to change, to customize the caption */}
-                    <Container
-                      size="container.lg"
-                      height="100px"
-                      position="relative"
+                    <Center
+                      display="flex"
+                      h="154px"
+                      w="274px"
+                      alignItems="flex-end"
+                      py="50px"
                     >
-                      <Stack
-                        spacing={6}
-                        w={"full"}
-                        maxW={"lg"}
-                        position="absolute"
-                        top="50%"
-                        transform="translate(0, -50%)"
+                      <Heading
+                        fontSize={"6px"}
+                        color="#1C2C5A"
+                        backgroundColor={"white"}
+                        px="10px"
+                        py="5px"
                       >
-                        <Heading
-                          fontSize={{ base: "3xl", md: "4xl", lg: "5xl" }}
-                        >
-                          {card.caption}
-                        </Heading>
-                        {/* <Text
-                        fontSize={{ base: "md", lg: "lg" }}
-                        color="GrayText"
-                      >
-                        {card.text}
-                      </Text> */}
-                      </Stack>
-                    </Container>
+                        {card.caption}
+                      </Heading>
+                    </Center>
                   </Box>
                 ))}
               </Slider>

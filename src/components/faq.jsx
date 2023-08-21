@@ -41,12 +41,12 @@ export default function FAQ() {
           id="faq"
         >
           <Flex
-            color="#1C2C5A"
+            color="#807D8A"
             textAlign="center"
-            fontSize="60px"
-            font-style="normal"
-            font-weight="600"
-            line-height="70px"
+            fontSize="16px"
+            fontStyle="normal"
+            fontWeight="600"
+            lineHeight="26px"
           >
             Frequently asked questions
           </Flex>
@@ -117,10 +117,8 @@ export default function FAQ() {
                     </AccordionButton>
                   </h2>
                   <AccordionPanel pb={4} w="768px">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Hubungin WhatsApp kami +62 878-5547-6158, atau bisa chat
+                    admin Instagram kami @substitute.makerspace
                   </AccordionPanel>
                 </AccordionItem>
                 <AccordionItem>
@@ -133,10 +131,7 @@ export default function FAQ() {
                     </AccordionButton>
                   </h2>
                   <AccordionPanel pb={4} w="768px">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Bisa kunjungi Instagram kami di akun @substitute.makerspace
                   </AccordionPanel>
                 </AccordionItem>
                 <AccordionItem>
@@ -150,10 +145,7 @@ export default function FAQ() {
                     </AccordionButton>
                   </h2>
                   <AccordionPanel pb={4} w="768px">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Hubungin WhatsApp kami di nomor +62 878-5547-6158
                   </AccordionPanel>
                 </AccordionItem>
                 <AccordionItem>
@@ -280,10 +272,8 @@ export default function FAQ() {
                     </AccordionButton>
                   </h2>
                   <AccordionPanel pb={4} w="700px">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Hubungin WhatsApp kami +62 878-5547-6158, atau bisa chat
+                    admin Instagram kami @substitute.makerspace
                   </AccordionPanel>
                 </AccordionItem>
                 <AccordionItem>
@@ -302,10 +292,7 @@ export default function FAQ() {
                     </AccordionButton>
                   </h2>
                   <AccordionPanel pb={4} w="700px">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Bisa kunjungi Instagram kami di akun @substitute.makerspace
                   </AccordionPanel>
                 </AccordionItem>
                 <AccordionItem>
@@ -325,10 +312,7 @@ export default function FAQ() {
                     </AccordionButton>
                   </h2>
                   <AccordionPanel pb={4} w="700px">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Hubungin WhatsApp kami di nomor +62 878-5547-6158
                   </AccordionPanel>
                 </AccordionItem>
                 <AccordionItem>
@@ -442,10 +426,8 @@ export default function FAQ() {
                     </AccordionButton>
                   </h2>
                   <AccordionPanel pb={4} w="200px">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Hubungin WhatsApp kami +62 878-5547-6158, atau bisa chat
+                    admin Instagram kami @substitute.makerspace
                   </AccordionPanel>
                 </AccordionItem>
                 <AccordionItem>
@@ -458,10 +440,7 @@ export default function FAQ() {
                     </AccordionButton>
                   </h2>
                   <AccordionPanel pb={4} w="200px">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Bisa kunjungi Instagram kami di akun @substitute.makerspace
                   </AccordionPanel>
                 </AccordionItem>
                 <AccordionItem>
@@ -475,10 +454,7 @@ export default function FAQ() {
                     </AccordionButton>
                   </h2>
                   <AccordionPanel pb={4} w="200px">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Hubungin WhatsApp kami di nomor +62 878-5547-6158
                   </AccordionPanel>
                 </AccordionItem>
                 <AccordionItem>

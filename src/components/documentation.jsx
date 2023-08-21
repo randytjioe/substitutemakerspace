@@ -29,6 +29,7 @@ import D7 from "../assets/D7.jpg";
 import D8 from "../assets/D8.jpg";
 import D9 from "../assets/D9.JPG";
 import D10 from "../assets/D10.JPG";
+import D11 from "../assets/D10.JPG";
 import React from "react";
 
 import Slider from "react-slick";

@@ -25,7 +25,7 @@ export default function Hero() {
       {besar ? (
         <Flex
           display="flex"
-          p="120px 120px"
+          p="50px 50px"
           flexDirection="column"
           alignItems={"center"}
           justifyContent={"center"}
@@ -81,7 +81,7 @@ export default function Hero() {
                   color={"white"}
                   _hover={{
                     bgColor: "#F0D411",
-                    color: "black",
+                    color: "white",
                   }}
                 >
                   <Image
@@ -89,7 +89,7 @@ export default function Hero() {
                     w={["21px"]}
                     h={["21px"]}
                     _hover={{
-                      color: "black",
+                      color: "white",
                     }}
                   ></Image>
                   Ask Me
@@ -158,7 +158,7 @@ export default function Hero() {
                   color={"white"}
                   _hover={{
                     bgColor: "#F0D411",
-                    color: "black",
+                    color: "white",
                   }}
                 >
                   <Image
@@ -225,7 +225,7 @@ export default function Hero() {
                   color={"white"}
                   _hover={{
                     bgColor: "#F0D411",
-                    color: "black",
+                    color: "white",
                   }}
                 >
                   <Image

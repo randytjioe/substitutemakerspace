@@ -143,7 +143,7 @@ export default function Product() {
                   h="64px"
                   _hover={{
                     bgColor: "#F0D411",
-                    color: "black",
+                    color: "white",
                   }}
                 >
                   <Image src={Cart}></Image>
@@ -1191,7 +1191,7 @@ export default function Product() {
                   h="46px"
                   _hover={{
                     bgColor: "#F0D411",
-                    color: "black",
+                    color: "white",
                   }}
                 >
                   <Image src={Cart} w="24px" h="24px"></Image>
@@ -1281,7 +1281,7 @@ export default function Product() {
                   h="46px"
                   _hover={{
                     bgColor: "#F0D411",
-                    color: "black",
+                    color: "white",
                   }}
                 >
                   <Image src={Cart} w="24px" h="24px"></Image>
@@ -1463,7 +1463,7 @@ export default function Product() {
                   h="46px"
                   _hover={{
                     bgColor: "#F0D411",
-                    color: "black",
+                    color: "white",
                   }}
                 >
                   <Image src={Cart} w="24px" h="24px"></Image>

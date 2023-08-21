@@ -195,6 +195,16 @@ export default function Footer() {
               </Flex>
             </Flex>
           </Flex>
+          <Flex
+            color="#1C2C5A"
+            textAlign="center"
+            fontSize="14px"
+            fontStyle="normal"
+            fontWeight="400"
+            lineHeight="24px"
+          >
+            © Copyright 2023 | Randy
+          </Flex>
         </Flex>
       ) : medium ? (
         <Flex
@@ -363,12 +373,21 @@ export default function Footer() {
                 fontWeight="400"
                 lineHeight="28px"
               >
-              
                 is to become a creative space where arts, culture, business, and
                 technology converge to inspire and encourage new forms of
                 innovation to spur the creative economy
               </Flex>
             </Flex>
+          </Flex>
+          <Flex
+            color="#1C2C5A"
+            textAlign="center"
+            fontSize="14px"
+            fontStyle="normal"
+            fontWeight="400"
+            lineHeight="24px"
+          >
+            © Copyright 2023 | Randy
           </Flex>
         </Flex>
       ) : kecil ? (

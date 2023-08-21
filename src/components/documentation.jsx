@@ -19,7 +19,7 @@ import YTB from "../assets/YTB.png";
 import IG from "../assets/IG.png";
 import FB from "../assets/FB.png";
 import HERO from "../assets/HERO.png";
-import D1 from "../assets/D1.JPG";
+import D1 from "../assets/D1.jpg";
 import D2 from "../assets/D2.jpg";
 import D3 from "../assets/D3.jpg";
 import D4 from "../assets/D4.jpg";

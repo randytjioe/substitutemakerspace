@@ -17,7 +17,7 @@ import {
 } from "@chakra-ui/react";
 import { AiOutlineMinusCircle, AiFillPlusCircle } from "react-icons/ai";
 import logo from "../assets/logo.png";
-import WA from "../assets/WA P.png";
+import WA from "../assets/WA-P.png";
 import YTB from "../assets/YTB.png";
 import IG from "../assets/IG.png";
 import FB from "../assets/FB.png";

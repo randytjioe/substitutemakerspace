@@ -14,7 +14,7 @@ import {
 } from "@chakra-ui/react";
 import { BiLeftArrowAlt, BiRightArrowAlt } from "react-icons/bi";
 import logo from "../assets/logo.png";
-import WA from "../assets/WA P.png";
+import WA from "../assets/WA-P.png";
 import YTB from "../assets/YTB.png";
 import IG from "../assets/IG.png";
 import FB from "../assets/FB.png";
@@ -58,16 +58,29 @@ export default function Documentation() {
   const data = [
     {
       image: [D1],
-      caption: ["Zero Waste Fashion w/ Aryani Widagdo Creativity Nest 2019"],
+      caption: [
+        "Zero Waste Fashion w/ Aryani Widagdo Creativity Nest tahun 2019",
+      ],
     },
-    { image: [D9], caption: ["Creative Hub Academy 2019"] },
+    { image: [D9], caption: ["Creative Hub Academy tahun 2019"] },
     {
       image: [D10],
       caption: [
-        "Pelatihan Menjahit Popok Bayi bersama Muslimat NU - Fatayat 2021",
+        "Pelatihan Menjahit Popok Bayi bersama Muslimat NU - Fatayat tahun 2021",
       ],
     },
-    { image: [D2], caption: ["BOSCH Launching Product"] },
+    { image: [D2], caption: ["BOSCH Launching Product tahun 2022"] },
+    { image: [D3], caption: ["Shibori tahun 2021"] },
+    { image: [D4], caption: ["Pottery Painting Workshop tahun 2022"] },
+    { image: [D5], caption: ["Linocut Workshop tahun 2023"] },
+    {
+      image: [D8],
+      caption: ["Program Surabaya Ramah Pesepeda bekerjasama dengan ITDP"],
+    },
+    {
+      image: [D11],
+      caption: ["Carpentrip tahun 2019"],
+    },
   ];
   return (
     <>

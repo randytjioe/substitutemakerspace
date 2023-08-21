@@ -3,11 +3,13 @@ import {
   Center,
   Flex,
   Image,
+  Box,
+  AspectRatio,
   Text,
   useMediaQuery,
 } from "@chakra-ui/react";
 import logo from "../assets/logo.png";
-import WA from "../assets/WA P.png";
+import WA from "../assets/WA-P.png";
 import YTB from "../assets/YTB.png";
 import IG from "../assets/IG.png";
 import FB from "../assets/FB.png";
@@ -16,6 +18,7 @@ import ASK from "../assets/AboutMe.jpg";
 import ASK1 from "../assets/AboutMe1.jpg";
 import HERO from "../assets/HERO.png";
 import CHECK from "../assets/check.svg";
+import Video from "../assets/AboutME.mp4";
 
 export default function AboutMe() {
   const [kecil] = useMediaQuery("(min-width: 320px)");
@@ -106,6 +109,14 @@ export default function AboutMe() {
               </Flex>
             </Flex>
           </Flex>
+          <Box
+            as="iframe"
+            w="1200px"
+            src={"https://www.youtube.com/embed/jii9J_dthPo"}
+            sx={{
+              aspectRatio: "16/9",
+            }}
+          />
         </Center>
       ) : medium ? (
         <Center
@@ -180,6 +191,14 @@ export default function AboutMe() {
               </Flex>
             </Flex>
           </Flex>
+          <Box
+            as="iframe"
+            w="767px"
+            src={"https://www.youtube.com/embed/jii9J_dthPo"}
+            sx={{
+              aspectRatio: "16/9",
+            }}
+          />
         </Center>
       ) : kecil ? (
         <Center
@@ -188,7 +207,7 @@ export default function AboutMe() {
           flexDirection="column"
           alignItems="center"
           gap="15px"
-          py="120px"
+          py="50px"
           id="aboutme"
         >
           <Flex
@@ -261,6 +280,14 @@ export default function AboutMe() {
               </Flex>
             </Flex>
           </Flex>
+          <Box
+            as="iframe"
+            w="100%"
+            src={"https://www.youtube.com/embed/jii9J_dthPo"}
+            sx={{
+              aspectRatio: "16/9",
+            }}
+          />
         </Center>
       ) : null}
     </>

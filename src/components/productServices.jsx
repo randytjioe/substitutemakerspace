@@ -8,7 +8,7 @@ import {
   useMediaQuery,
 } from "@chakra-ui/react";
 import logo from "../assets/logo.png";
-import WA from "../assets/WA P.png";
+import WA from "../assets/WA-P.png";
 import YTB from "../assets/YTB.png";
 import IG from "../assets/IG.png";
 import FB from "../assets/FB.png";
@@ -184,6 +184,7 @@ export default function Product() {
                 fontStyle="normal"
                 fontWeight="400"
                 lineHeight="24px"
+                margin="1rem"
               >
                 Recommended
               </Flex>
@@ -274,6 +275,7 @@ export default function Product() {
                 fontStyle="normal"
                 fontWeight="400"
                 lineHeight="24px"
+                margin="1rem"
               >
                 Recommended
               </Flex>
@@ -363,6 +365,7 @@ export default function Product() {
                 fontStyle="normal"
                 fontWeight="400"
                 lineHeight="24px"
+                margin="1rem"
               >
                 Recommended
               </Flex>
@@ -455,6 +458,7 @@ export default function Product() {
                 fontStyle="normal"
                 fontWeight="400"
                 lineHeight="24px"
+                margin="1rem"
               >
                 Recommended
               </Flex>

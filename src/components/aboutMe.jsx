@@ -125,13 +125,11 @@ export default function AboutMe() {
           flexDirection="column"
           alignItems="center"
           gap="29px"
-          h="724px"
           id="aboutme"
         >
           <Flex
             display="flex"
             width="767px"
-            height="389px"
             flexDirection="column"
             alignItems="center"
             gap="30px"
@@ -153,44 +151,44 @@ export default function AboutMe() {
             >
               About Me
             </Flex>
+          </Flex>
+          <Flex
+            display="flex"
+            justifyContent="center"
+            padding={"10px"}
+            w="767px"
+            h="552px"
+            flexShrink={"0"}
+            alignItems="center"
+            flexDir={"column"}
+            gap="50px"
+          >
+            <Image src={ASK} width="442.5px" height="252px"></Image>
 
             <Flex
-              display="flex"
-              justifyContent="center"
-              padding={"10px"}
-              w="767px"
-              h="552px"
-              flexShrink={"0"}
-              alignItems="center"
-              flexDir={"column"}
-              gap="50px"
+              color="#1C2C5A"
+              fontSize="24px"
+              fontStyle="normal"
+              fontWeight="800"
+              lineHeight="28px"
+              textAlign={"center"}
             >
-              <Image src={ASK} width="442.5px" height="252px"></Image>
-
-              <Flex
-                color="#1C2C5A"
-                fontSize="24px"
-                fontStyle="normal"
-                fontWeight="800"
-                lineHeight="28px"
-                textAlign={"center"}
-              >
-                Substitute Makerspace
-              </Flex>
-              <Flex fontSize="14px" w="600px" textAlign={"center"}>
-                merupakan wadah bagi para individu/kelompok kreatif untuk
-                mendapatkan kemudahan akses dan fasilitas lengkap dalam
-                menjangkau kegiatan, peralatan, hingga pengetahuan dalam
-                menciptakan berbagai jenis produk. 
-              </Flex>
-              <Flex fontSize="14px" w="600px" textAlign={"center"}>
-                Visi kami adalah menjadi tempat kreatif yang menggabungkan
-                nilai-nilai seni, budaya, bisnis, dan teknologi untuk
-                membangkitkan inspirasi dalam memajukan ekonomi kreatif melalui
-                inovasi terbaru.
-              </Flex>
+              Substitute Makerspace
+            </Flex>
+            <Flex fontSize="14px" w="600px" alignItems={"center"}>
+              merupakan wadah bagi para individu/kelompok kreatif untuk
+              mendapatkan kemudahan akses dan fasilitas lengkap dalam menjangkau
+              kegiatan, peralatan, hingga pengetahuan dalam menciptakan berbagai
+              jenis produk. 
+            </Flex>
+            <Flex fontSize="14px" w="600px" alignItems={"center"}>
+              Visi kami adalah menjadi tempat kreatif yang menggabungkan
+              nilai-nilai seni, budaya, bisnis, dan teknologi untuk
+              membangkitkan inspirasi dalam memajukan ekonomi kreatif melalui
+              inovasi terbaru.
             </Flex>
           </Flex>
+
           <Box
             as="iframe"
             w="767px"

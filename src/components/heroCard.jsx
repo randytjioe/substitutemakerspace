@@ -101,7 +101,7 @@ export default function Hero() {
       ) : medium ? (
         <Flex
           display="flex"
-          p={["20px"]}
+          p={"50px"}
           flexDirection="column"
           alignItems={"center"}
           justifyContent={"center"}
@@ -111,6 +111,7 @@ export default function Hero() {
           <Center
             w={"736px"}
             h={"444px"}
+            marginBottom={"100px"}
             bgImage={MIDHERO}
             borderRadius={"50px"}
           >
